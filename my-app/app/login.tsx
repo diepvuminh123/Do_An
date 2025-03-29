@@ -7,13 +7,13 @@ export default function Login() {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // 👉 Add logic to validate credentials here
+   
     if (!email || !password) {
       alert('Please enter email and password');
       return;
     }
 
-    // 👉 If login success, navigate to main app
+   
     console.log('Logging in with:', email, password);
     router.replace('/(tabs)');
   };
