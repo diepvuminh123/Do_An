@@ -1,26 +1,23 @@
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-import { useState } from 'react';
 import { router } from 'expo-router';
+import { useState } from 'react';
 
-export default function Login() {
+export default function SignUp() {
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  const handleLogin = () => {
-    // 👉 Add logic to validate credentials here
-    if (!email || !password) {
-      alert('Please enter email and password');
-      return;
-    }
-
-    // 👉 If login success, navigate to main app
-    console.log('Logging in with:', email, password);
-    router.replace('/(tabs)');
-  };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>BK MOTOR{'\n'}CALCULATOR</Text>
+
+      <TextInput
+        style={styles.input}
+        placeholder="Username"
+        placeholderTextColor="#ccc"
+        value={username}
+        onChangeText={setUsername}
+      />
 
       <TextInput
         style={styles.input}
@@ -39,18 +36,14 @@ export default function Login() {
         onChangeText={setPassword}
       />
 
-      <TouchableOpacity style={styles.forgotContainer}>
-        <Text style={styles.forgotText}>Forgot password?</Text>
+      <TouchableOpacity style={styles.signupButton}>
+        <Text style={styles.signupText}>Sign up</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-        <Text style={styles.loginText}>Log In</Text>
-      </TouchableOpacity>
-
-      <Text style={styles.signupText}>
-        Don’t have an account?{' '}
-        <Text style={styles.signupLink} onPress={() => router.push('/signup')}>
-          Sign up
+      <Text style={styles.loginText}>
+        Already have account?{' '}
+        <Text style={styles.loginLink} onPress={() => router.replace('/login')}>
+          Log in
         </Text>
       </Text>
     </View>
@@ -81,16 +74,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     color: '#fff',
   },
-  forgotContainer: {
-    width: '100%',
-    alignItems: 'flex-end',
-    marginBottom: 20,
-  },
-  forgotText: {
-    color: '#ccc',
-    fontStyle: 'italic',
-  },
-  loginButton: {
+  signupButton: {
     backgroundColor: 'white',
     borderRadius: 6,
     paddingVertical: 12,
@@ -99,14 +83,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 30,
   },
-  loginText: {
+  signupText: {
     fontWeight: 'bold',
     color: '#000',
   },
-  signupText: {
+  loginText: {
     color: '#ccc',
   },
-  signupLink: {
+  loginLink: {
     color: 'white',
     fontWeight: 'bold',
     textDecorationLine: 'underline',
