@@ -11,10 +11,15 @@ async function main() {
 
         try {
             const response = await openai.chat.completions.create({
-                messages: [{ role: "user", content: "Hi" }],
-                model: "deepseek-chat",
+                messages: [
+                    {
+                        role: 'user',
+                        content: userInput,
+                    }
+                  ],
+                  model: 'gpt-3.5-turbo',
             });
-            const completionText = response.data.choices[0].message.content;
+            const completionText = response.choices[0].message.content;
             if(userInput.toLowerCase() === 'exit') {
                 console.log(colors.green('Bot: BaiBai'));
                 return;
