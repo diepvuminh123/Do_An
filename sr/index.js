@@ -3,6 +3,8 @@ const morgan = require("morgan");
 const path = require("path");
 const mainRoutes = require("./routes/index");
 const connectDB = require("./config/db.js");
+const routes = require('./routes');
+const errorHandler = require('./middleware/errorHandler');
 const dotenv = require("dotenv");
 const cors = require("cors"); // import cors package
 
@@ -41,7 +43,7 @@ app.use(
 // Routes
 app.use("/", mainRoutes);
 
-const PORT = process.env.PORT || 9898;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

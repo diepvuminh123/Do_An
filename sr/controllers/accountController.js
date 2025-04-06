@@ -1,5 +1,5 @@
 // controllers/accountController.js
-const Account = require("../model/Account");
+const Account = require("../models/Account");
 const jwt = require("jsonwebtoken");
 
 // Tạo tài khoản mới
