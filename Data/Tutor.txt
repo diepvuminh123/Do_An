@@ -1,0 +1,94 @@
+//Tutor bellow ( gpt gen)
+// ===============================
+// ⚙️ Helical Gear Catalog Data
+// 📝 Dữ liệu cấu hình các hộp giảm tốc loại **helical gear** ở tốc độ đầu vào 1750 RPM
+//
+// Cấu trúc tổng thể:
+// - inputSpeed: Tốc độ quay đầu vào (ví dụ: "1750 RPM")
+//
+// - Helical_Gear: Mảng các hộp số phân theo kích thước (box size)
+//     - size: Mã kích thước hộp số (ví dụ: 37, 47, 97, 147)
+//     - configurations: Mảng các cấu hình tỉ số truyền của từng size
+//
+//         - normalRatio: Tỉ số truyền danh nghĩa (chuỗi, ví dụ "5:1")
+//         - actualRatio: Tỉ số truyền thực tế (số thập phân)
+//         - outputRPM: Số vòng quay đầu ra (vòng/phút)
+//         - inputHP: Công suất đầu vào (Horse Power)
+//         - outputTorque: Mô-men xoắn đầu ra
+//             - value: Giá trị số (lbs.in.)
+//             - unit: Đơn vị (thường là "lbs.in.")
+//         - outputTorqueOverhung: Tải trọng hướng tâm tại trục ra (O.H.L.)
+//             - value: Giá trị (lbs.)
+//             - unit: "lbs."
+//         - ohl: Số điểm chịu lực OHL (Overhung Load Rating level)
+//         - stages: Số tầng truyền động (1, 2 hoặc 3)
+//
+//         - thermalRatings: Định mức tải nhiệt theo các loại motor frame (ví dụ: 56C, 213TC,...)
+//             - Mỗi key là mã khung motor (ví dụ: "56C", "184TC")
+//             - Mỗi giá trị là object chứa:
+//                 - hp: Công suất đầu vào cho phép (giới hạn nhiệt) (có thể null)
+//                 - torque: Mô-men tương ứng (nếu có)
+//
+// ✅ Các frame motor có thể bao gồm: 56C, 143TC, 145TC, 182TC, 184TC, 213TC, 215TC, 254TC, 256TC, 284TC, v.v.
+//
+// 📎 Một số key có thể có giá trị null nếu không có dữ liệu cho mã đó.
+// ===============================
+// ===============================
+// 📦 Worm Gear Catalog Data
+// 📝 Dữ liệu này mô tả các hộp giảm tốc loại worm gear (trục vít) ở tốc độ đầu vào 1750 RPM
+//
+// Cấu trúc:
+// - inputSpeed: Tốc độ đầu vào cố định (hiện là 1750 vòng/phút)
+// - Worm_Gear: Mảng các hộp số theo kích thước (boxSize)
+//     - boxSize: Mã size của hộp số (ví dụ: 133, 154...)
+//     - loadCapacity:
+//         - outputShaftThrust: Lực dọc trục cho phép tại trục ra (đơn vị: lbs.)
+//         - ohlValue: Tải hướng tâm cho phép (Overhung Load) (đơn vị: lbs.)
+//     - backlash: Độ rơ (đơn vị: phút góc)
+//     - ratios: Mảng các tỉ số truyền
+//         - ratio: Dạng chuỗi hiển thị (VD: "5:1")
+//         - ratioValue: Giá trị số tương ứng (VD: 5.1)
+//         - mechanical: Dữ liệu truyền động cơ học
+//             - input.hp: Công suất đầu vào (HP)
+//             - output.torque: Mô-men xoắn đầu ra (lbs.in)
+//             - output.hp: Công suất đầu ra
+//         - thermal: Dữ liệu truyền động theo giới hạn nhiệt
+//             - input.hp: Công suất đầu vào cho phép (theo nhiệt độ)
+//             - output.torque: Mô-men xoắn đầu ra (giới hạn nhiệt)
+//             - output.hp: Công suất đầu ra (giới hạn nhiệt)
+//         - efficiency: Hiệu suất truyền động (%)
+// ===============================
+// ==================================================================
+// 📊 Calculation History Sample Data
+// 📝 Đây là dữ liệu mẫu cho **lịch sử tính toán** hộp số (gearbox selection log)
+//
+// Mỗi phần tử trong mảng là một lần người dùng thực hiện tính toán và nhận đề xuất.
+// Dữ liệu được thiết kế để lưu trong MongoDB hoặc dùng làm mock API.
+//
+// Cấu trúc của từng object:
+// ------------------------------------------------------------------
+// - _id: ID duy nhất (giả lập ObjectId như MongoDB sử dụng)
+// - motorPower: Công suất motor đầu vào
+//     - value: Giá trị công suất (số)
+//     - unit: Đơn vị công suất ("kW", "HP",...)
+// - inputSpeed: Tốc độ quay đầu vào (RPM)
+// - desiredOutputSpeed: Tốc độ mong muốn ở đầu ra (RPM)
+// - gearRatio: Tỉ số truyền đã tính ra (VD: "20.1:1")
+// - torque: Mô-men xoắn tính được tại đầu ra (đơn vị có thể là Nm, lbs.in...)
+// - conditions: Điều kiện làm việc do người dùng chọn
+//     - loadType: Mức độ tải ("Light", "Medium", "Heavy")
+//     - dailyOperationHours: Số giờ vận hành mỗi ngày ("<4h", "4–8h", "8–16h", ">16h")
+//     - environment: Mảng các điều kiện môi trường như:
+//         - "Normal"
+//         - "Dusty"
+//         - "High Temperature"
+//         - "Humid/Chemical exposure"
+// - selectedGearboxType: Loại hộp số mà người dùng chọn để lọc (VD: "Worm", "Helical")
+// - recommendations: Mảng các ObjectId của các model hộp số phù hợp (kết quả tìm được)
+// - createdAt: Thời điểm người dùng thực hiện tính toán (chuẩn ISO 8601)
+//
+// ✨ Dữ liệu này hữu ích cho:
+// - Hiển thị lịch sử tính toán cho người dùng
+// - Phân tích hành vi sử dụng hệ thống
+// - Log phục vụ tái sử dụng/tối ưu đề xuất sau này
+// ==================================================================
