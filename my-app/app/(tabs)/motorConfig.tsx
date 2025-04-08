@@ -9,6 +9,9 @@ import {
   StyleSheet,
   ScrollView,
   Pressable,
+  LayoutAnimation,
+  Platform,
+  UIManager,
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
@@ -20,7 +23,7 @@ const ConfigInput = ({ label, value, onValueChange }: any) => (
       <TextInput
         style={styles.input}
         placeholder="Nhập giá trị"
-        placeholderTextColor="#999"
+        placeholderTextColor="black"
         keyboardType="numeric"
         value={value}
         onChangeText={onValueChange}
@@ -64,6 +67,12 @@ export default function TabMotorConfigurationScreen() {
   const [chainTeeth, setChainTeeth] = useState('');
   const [shaftDistance, setShaftDistance] = useState('');
   const [beltType, setBeltType] = useState('');
+  // == Thoát ẩn thoát hiện ==
+  const [showSection2, setShowSection2] = useState(false);
+  const [showSection3, setShowSection3] = useState(false);
+  const [showSection4, setShowSection4] = useState(false);
+  const [showSection5, setShowSection5] = useState(false);
+
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -80,8 +89,12 @@ export default function TabMotorConfigurationScreen() {
       </View>
 
       {/* 2. Động cơ */}
+      <Pressable onPress={() => 
+        setShowSection2(!showSection2)}>
+      <Text style={styles.sectionTitle}>2. Thông số động cơ </Text>
+    </Pressable>
+    {showSection2 && (
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>2. Thông số động cơ</Text>
         <ConfigInput label="Tốc độ đầu vào (n_in)" value={nIn} onValueChange={setNIn} />
         <ConfigInput label="Công suất đầu vào (P_in)" value={pIn} onValueChange={setPIn} />
         <Text style={styles.label}>Loại động cơ</Text>
@@ -95,50 +108,64 @@ export default function TabMotorConfigurationScreen() {
         </View>
         <ConfigInput label="Kiểu động cơ (VD: K160S4...)" value={motorModel} onValueChange={setMotorModel} />
       </View>
+    )}
+
 
       {/* 3. Tỉ số truyền */}
+      <Pressable onPress={() => setShowSection3(!showSection3)}>
+      <Text style={styles.sectionTitle}>3. Tỉ số truyền</Text>
+    </Pressable>
+    {showSection3 && (
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>3. Tỉ số truyền</Text>
         <ConfigInput label="Tỉ số truyền tổng (u_t)" value={totalRatio} onValueChange={setTotalRatio} />
         <ConfigInput label="Tỉ số truyền từng cấp" value={stageRatio} onValueChange={setStageRatio} />
         <ConfigInput label="Số răng chủ động (Z1)" value={z1} onValueChange={setZ1} />
         <ConfigInput label="Số răng bị động (Z2)" value={z2} onValueChange={setZ2} />
         <ConfigInput label="Số vòng quay trục ra (n_out)" value={nOut} onValueChange={setNOut} />
       </View>
+    )}
+
 
       {/* 4. Kiểm nghiệm hộp giảm tốc */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>4. Tính toán, kiểm nghiệm hộp giảm tốc</Text>
-        <ConfigInput label="Mô-men xoắn trục 1 (T1)" value={t1} onValueChange={setT1} />
-        <ConfigInput label="Mô-men xoắn trục 2 (T2)" value={t2} onValueChange={setT2} />
-        <ConfigInput label="Công suất trục 1 (P1)" value={p1} onValueChange={setP1} />
-        <ConfigInput label="Công suất trục 2 (P2)" value={p2} onValueChange={setP2} />
-        <ConfigInput label="Hiệu suất truyền (η)" value={efficiency} onValueChange={setEfficiency} />
-        <ConfigInput label="Hệ số quá tải" value={overloadFactor} onValueChange={setOverloadFactor} />
-        <ConfigInput label="Tỉ lệ thời gian tải lớn/nhỏ" value={loadTimeRatio} onValueChange={setLoadTimeRatio} />
-      </View>
+      <Pressable onPress={() => setShowSection4(!showSection4)}>
+  <Text style={styles.sectionTitle}>4. Tính toán, kiểm nghiệm hộp giảm tốc</Text>
+</Pressable>
+  {showSection4 && (
+    <View style={styles.section}>
+      <ConfigInput label="Mô-men xoắn trục 1 (T1)" value={t1} onValueChange={setT1} />
+      <ConfigInput label="Mô-men xoắn trục 2 (T2)" value={t2} onValueChange={setT2} />
+      <ConfigInput label="Công suất trục 1 (P1)" value={p1} onValueChange={setP1} />
+      <ConfigInput label="Công suất trục 2 (P2)" value={p2} onValueChange={setP2} />
+      <ConfigInput label="Hiệu suất truyền (η)" value={efficiency} onValueChange={setEfficiency} />
+      <ConfigInput label="Hệ số quá tải" value={overloadFactor} onValueChange={setOverloadFactor} />
+      <ConfigInput label="Tỉ lệ thời gian tải lớn/nhỏ" value={loadTimeRatio} onValueChange={setLoadTimeRatio} />
+    </View>
+  )}
+
 
       {/* 5. Bộ truyền hở */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>5. Bộ truyền hở (xích, đai...)</Text>
-        <ConfigInput label="Bước xích (p)" value={chainPitch} onValueChange={setChainPitch} />
-        <ConfigInput label="Số răng đĩa xích" value={chainTeeth} onValueChange={setChainTeeth} />
-        <ConfigInput label="Khoảng cách trục (a)" value={shaftDistance} onValueChange={setShaftDistance} />
-        <Text style={styles.label}>Loại đai</Text>
-        <View style={styles.pickerWrapper}>
-          <Picker selectedValue={beltType} onValueChange={setBeltType} style={styles.picker}>
-            <Picker.Item label="Chọn loại đai" value="" />
-            <Picker.Item label="Đai dẹt" value="flat" />
-            <Picker.Item label="Đai thang" value="v" />
-            <Picker.Item label="Đai răng" value="toothed" />
-          </Picker>
-        </View>
+      <Pressable onPress={() => setShowSection5(!showSection5)}>
+  <Text style={styles.sectionTitle}>5. Bộ truyền hở (xích, đai...)</Text>
+</Pressable>
+  {showSection5 && (
+    <View style={styles.section}>
+      <ConfigInput label="Bước xích (p)" value={chainPitch} onValueChange={setChainPitch} />
+      <ConfigInput label="Số răng đĩa xích" value={chainTeeth} onValueChange={setChainTeeth} />
+      <ConfigInput label="Khoảng cách trục (a)" value={shaftDistance} onValueChange={setShaftDistance} />
+      <Text style={styles.label}>Loại đai</Text>
+      <View style={styles.pickerWrapper}>
+        <Picker selectedValue={beltType} onValueChange={setBeltType} style={styles.picker}>
+          <Picker.Item label="Chọn loại đai" value="" />
+          <Picker.Item label="Đai dẹt" value="flat" />
+          <Picker.Item label="Đai thang" value="v" />
+          <Picker.Item label="Đai răng" value="toothed" />
+        </Picker>
       </View>
+    </View>
+  )}
 
-      <Pressable
-      style={styles.recommendButton}
-      onPress={() => router.push('/gearboxRecommendations')}
-    >
+
+    <Pressable style={styles.recommendButton} onPress={() => router.push('/gearboxRecommendations')}>
       <Text style={styles.recommendText}>Tính Toán / Gợi ý bộ truyền</Text>
     </Pressable>
       
