@@ -22,15 +22,17 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        // Disable the static render of the header on web
-        // to prevent a hydration error in React Navigation v6.
         headerShown: useClientOnlyValue(false, true),
+        tabBarStyle: { backgroundColor: '#001627' },
+        headerStyle: { backgroundColor: '#001627' },
+        headerTitleStyle: { color: '#fff' },
+        headerTintColor: '#fff',
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Trang Chủ',
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -48,28 +50,33 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="motorConfig"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Cấu Hình Động Cơ',
+          tabBarIcon: ({ color }) => <TabBarIcon name="cog" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="motorConfig"
+        name="gearboxRecommendations"
         options={{
-          title: 'Motor Configuration',
-          tabBarIcon: ({ color }) => <TabBarIcon name="cog" color={color} />,
-          headerShown: false, 
+          title: 'Gợi Ý Bộ Truyền',
+          tabBarIcon: ({ color }) => <TabBarIcon name="gears" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="reportGenerator"
+        options={{
+          title: 'Báo Cáo',
+          tabBarIcon: ({ color }) => <TabBarIcon name="file-text" color={color} />,
         }}
       />
       <Tabs.Screen
         name="technicalSpecification"
         options={{
-          title: 'Tech Specs',
+          title: 'Thông Số Kỹ Thuật',
           tabBarIcon: ({ color }) => <TabBarIcon name="info-circle" color={color} />,
         }}
       />
     </Tabs>
-
   );
 }

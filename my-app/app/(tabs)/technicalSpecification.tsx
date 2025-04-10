@@ -1,131 +1,194 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, FlatList, TextInput } from 'react-native';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { StyleSheet, ScrollView, View, Text } from 'react-native';
 
-// Dữ liệu và types
-type SpecificationItem = {
-  label: string;
-  value: string;
-};
-
-type ProductItem = {
-  id: string;
-  name: string;
-  gearRatio: string;
-  torque: string;
-  efficiency: string;
-  manufacturer: string;
-  price: string;
-};
-
-// Reusable Component cho các card thông tin
-const InfoCard = ({ title, items, onEdit }: {
-  title: string;
-  items: SpecificationItem[];
-  onEdit?: () => void;
-}) => (
-  <View style={styles.card}>
-    <View style={styles.headerRow}>
-      <Text style={styles.cardTitle}>{title}</Text>
-      {onEdit && (
-        <TouchableOpacity onPress={onEdit}>
-          <FontAwesome name="pencil" size={20} color="#333" />
-        </TouchableOpacity>
-      )}
-    </View>
-    {items.map((item, index) => (
-      <Text key={index} style={styles.specLine}>
-        {item.label}: <Text style={styles.specValue}>{item.value}</Text>
-      </Text>
-    ))}
-  </View>
-);
-
-// Component chính
 export default function TechnicalSpecificationScreen() {
-  // Dữ liệu mẫu
-  const technicalSpecs: SpecificationItem[] = [
-    { label: 'Motor Power', value: '5.5 kW' },
-    { label: 'Input Speed', value: '1450 RPM' },
-    { label: 'Output Speed', value: '120 RPM' },
-    { label: 'Torque', value: '440 Auto' },
-    { label: 'Gear ratio', value: '12.08 Nm' },
-  ];
-
-  const installationSpecs: SpecificationItem[] = [
-    { label: 'Load Type', value: 'Medium Load' },
-    { label: 'Operating Time per Day', value: '8 - 16 hours' },
-    { label: 'Working Environment', value: 'Normal' },
-    { label: 'Orientation', value: 'Worm Gear, Horizontal, Direct Shaft' },
-  ];
-
-  const relatedItems: ProductItem[] = [
-    {
-      id: '1',
-      name: 'SEW R47',
-      gearRatio: '12.1',
-      torque: '450 Nm',
-      efficiency: '96%',
-      manufacturer: 'SEW',
-      price: '15,500,000 VND',
-    },
-    // Thêm các item khác...
-  ];
-
-  // Render sản phẩm liên quan
-  const renderProductItem = ({ item }: { item: ProductItem }) => (
-    <View style={styles.productCard}>
-      <Text style={styles.productTitle}>{item.name}</Text>
-      <View style={styles.specContainer}>
-        <Text style={styles.specText}>Ratio: {item.gearRatio}</Text>
-        <Text style={styles.specText}>Torque: {item.torque}</Text>
-        <Text style={styles.specText}>Eff: {item.efficiency}</Text>
-        <Text style={styles.specText}>{item.manufacturer}</Text>
-        <Text style={styles.priceText}>{item.price}</Text>
-      </View>
-    </View>
-  );
-
   return (
     <ScrollView style={styles.container}>
-      {/* Search Input */}
-      <TextInput
-        style={styles.searchInput}
-        placeholder="Enter product code or keyword"
-        placeholderTextColor="#888"
-      />
+      <Text style={styles.title}>Thông Số Kỹ Thuật</Text>
 
-      {/* Technical Specs */}
-      <InfoCard
-        title="Technical Specifications"
-        items={technicalSpecs}
-        onEdit={() => console.log('Edit technical specs')}
-      />
-
-      {/* Installation Type */}
-      <InfoCard
-        title="Installation type"
-        items={installationSpecs}
-      />
-
-      {/* Filter Bar */}
-      <View style={styles.filterContainer}>
-        {['Price', 'Efficiency', 'Popularity'].map((filter) => (
-          <TouchableOpacity key={filter} style={styles.filterButton}>
-            <Text style={styles.filterText}>{filter}</Text>
-          </TouchableOpacity>
-        ))}
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>1. Thông Số Băng Tải</Text>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Lực kéo băng tải (F):</Text>
+          <Text style={styles.specValue}>7500 N</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Vận tốc băng tải (v):</Text>
+          <Text style={styles.specValue}>0.9 m/s</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Đường kính tang (D):</Text>
+          <Text style={styles.specValue}>550 mm</Text>
+        </View>
       </View>
 
-      {/* Related Products */}
-      <Text style={styles.sectionTitle}>Related Products</Text>
-      <FlatList
-        horizontal
-        data={relatedItems}
-        renderItem={renderProductItem}
-        contentContainerStyle={styles.productList}
-        showsHorizontalScrollIndicator={false}
-      />
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>2. Thông Số Động Cơ K160S4</Text>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Công suất (P):</Text>
+          <Text style={styles.specValue}>7.5 kW</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Tốc độ quay (n):</Text>
+          <Text style={styles.specValue}>1450 vg/ph</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Hiệu suất:</Text>
+          <Text style={styles.specValue}>89 %</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Hệ số công suất:</Text>
+          <Text style={styles.specValue}>0.82</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Khối lượng:</Text>
+          <Text style={styles.specValue}>94 kg</Text>
+        </View>
+      </View>
+
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>3. Thông Số Bộ Truyền</Text>
+        <Text style={styles.sectionSubtitle}>Bộ truyền xích</Text>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Bước xích:</Text>
+          <Text style={styles.specValue}>19.05 mm</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Số răng đĩa chủ động:</Text>
+          <Text style={styles.specValue}>18</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Số răng đĩa bị động:</Text>
+          <Text style={styles.specValue}>46</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Hiệu suất:</Text>
+          <Text style={styles.specValue}>96 %</Text>
+        </View>
+
+        <Text style={styles.sectionSubtitle}>Hộp giảm tốc</Text>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Mô-đun bánh răng cấp 1:</Text>
+          <Text style={styles.specValue}>4 mm</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Mô-đun bánh răng cấp 2:</Text>
+          <Text style={styles.specValue}>3 mm</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Số răng bánh chủ động cấp 1:</Text>
+          <Text style={styles.specValue}>18</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Số răng bánh bị động cấp 1:</Text>
+          <Text style={styles.specValue}>102</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Số răng bánh chủ động cấp 2:</Text>
+          <Text style={styles.specValue}>22</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Số răng bánh bị động cấp 2:</Text>
+          <Text style={styles.specValue}>70</Text>
+        </View>
+        <View style={styles.specItem}>
+          <Text style={styles.specLabel}>Hiệu suất mỗi cấp:</Text>
+          <Text style={styles.specValue}>96 %</Text>
+        </View>
+      </View>
+
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>4. Công Thức Tính Toán</Text>
+        <View style={styles.formula}>
+          <Text style={styles.formulaTitle}>Công suất làm việc:</Text>
+          <Text style={styles.formulaText}>P = (F × v) / 1000</Text>
+        </View>
+        <View style={styles.formula}>
+          <Text style={styles.formulaTitle}>Số vòng quay trục công tác:</Text>
+          <Text style={styles.formulaText}>n = (60000 × v) / (π × D)</Text>
+        </View>
+        <View style={styles.formula}>
+          <Text style={styles.formulaTitle}>Mô-men xoắn:</Text>
+          <Text style={styles.formulaText}>T = 9.55 × 10⁶ × (P / n)</Text>
+        </View>
+        <View style={styles.formula}>
+          <Text style={styles.formulaTitle}>Công suất tương đương:</Text>
+          <Text style={styles.formulaText}>Ptd = Plv × √[(t₁(T₁/T)² + t₂(T₂/T)²)/(t₁+t₂)]</Text>
+        </View>
+        <View style={styles.formula}>
+          <Text style={styles.formulaTitle}>Hiệu suất tổng:</Text>
+          <Text style={styles.formulaText}>η = ηx × ηbr² × ηol⁴ × ηkn</Text>
+        </View>
+        <View style={styles.formula}>
+          <Text style={styles.formulaTitle}>Tỉ số truyền tổng:</Text>
+          <Text style={styles.formulaText}>ut = nđc / nlv</Text>
+        </View>
+      </View>
+
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>5. Ký Hiệu & Chú Thích</Text>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>F:</Text>
+          <Text style={styles.noteValue}>Lực kéo băng tải (N)</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>v:</Text>
+          <Text style={styles.noteValue}>Vận tốc băng tải (m/s)</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>D:</Text>
+          <Text style={styles.noteValue}>Đường kính tang (mm)</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>P:</Text>
+          <Text style={styles.noteValue}>Công suất (kW)</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>Plv:</Text>
+          <Text style={styles.noteValue}>Công suất làm việc (kW)</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>Ptd:</Text>
+          <Text style={styles.noteValue}>Công suất tương đương (kW)</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>n:</Text>
+          <Text style={styles.noteValue}>Số vòng quay (vg/ph)</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>T:</Text>
+          <Text style={styles.noteValue}>Mô-men xoắn (N.mm)</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>η:</Text>
+          <Text style={styles.noteValue}>Hiệu suất</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>ηx:</Text>
+          <Text style={styles.noteValue}>Hiệu suất bộ truyền xích</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>ηbr:</Text>
+          <Text style={styles.noteValue}>Hiệu suất bộ truyền bánh răng</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>ηol:</Text>
+          <Text style={styles.noteValue}>Hiệu suất một cặp ổ lăn</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>ηkn:</Text>
+          <Text style={styles.noteValue}>Hiệu suất khớp nối</Text>
+        </View>
+        <View style={styles.noteItem}>
+          <Text style={styles.noteKey}>ut:</Text>
+          <Text style={styles.noteValue}>Tỉ số truyền tổng</Text>
+        </View>
+      </View>
+
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>Phiên bản: 1.0.0</Text>
+        <Text style={styles.footerText}>© 2025 Ứng Dụng Hộp Giảm Tốc</Text>
+      </View>
     </ScrollView>
   );
 }
@@ -133,97 +196,100 @@ export default function TechnicalSpecificationScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#001627',
     padding: 16,
   },
-  card: {
-    backgroundColor: 'white',
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#fff',
+    textAlign: 'center',
+    marginVertical: 20,
+  },
+  section: {
+    backgroundColor: 'rgba(255, 255, 255, 0.08)',
     borderRadius: 12,
     padding: 16,
-    marginBottom: 16,
-    elevation: 3,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-  },
-  headerRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 12,
-  },
-  cardTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#2D3748',
-  },
-  specLine: {
-    fontSize: 14,
-    color: '#4A5568',
-    marginVertical: 4,
-  },
-  specValue: {
-    fontWeight: '500',
-    color: '#1A202C',
-  },
-  searchInput: {
-    backgroundColor: 'white',
-    borderRadius: 8,
-    padding: 14,
-    marginBottom: 16,
-    fontSize: 16,
-    elevation: 2,
-  },
-  filterContainer: {
-    flexDirection: 'row',
-    gap: 8,
-    marginVertical: 12,
-  },
-  filterButton: {
-    backgroundColor: '#EDF2F7',
-    borderRadius: 20,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-  },
-  filterText: {
-    color: '#4A5568',
-    fontWeight: '500',
-  },
-  productList: {
-    paddingBottom: 16,
-  },
-  productCard: {
-    width: 240,
-    backgroundColor: 'white',
-    borderRadius: 12,
-    padding: 16,
-    marginRight: 12,
-    elevation: 2,
-  },
-  productTitle: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#2D3748',
-    marginBottom: 8,
-  },
-  specContainer: {
-    gap: 4,
-  },
-  specText: {
-    fontSize: 14,
-    color: '#4A5568',
-  },
-  priceText: {
-    fontSize: 15,
-    fontWeight: '700',
-    color: '#2B6CB0',
-    marginTop: 8,
+    marginBottom: 20,
   },
   sectionTitle: {
     fontSize: 18,
-    fontWeight: '600',
-    color: '#2D3748',
-    marginVertical: 12,
+    fontWeight: 'bold',
+    color: '#4A90E2',
+    marginBottom: 15,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255, 255, 255, 0.2)',
+    paddingBottom: 8,
+  },
+  sectionSubtitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginTop: 16,
+    marginBottom: 8,
+  },
+  specItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: 8,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255, 255, 255, 0.1)',
+  },
+  specLabel: {
+    fontSize: 14,
+    color: '#ccc',
+    flex: 2,
+  },
+  specValue: {
+    fontSize: 14,
+    color: '#fff',
+    fontWeight: '500',
+    textAlign: 'right',
+    flex: 1,
+  },
+  formula: {
+    backgroundColor: 'rgba(74, 144, 226, 0.1)',
+    borderRadius: 8,
+    padding: 12,
+    marginVertical: 8,
+    borderLeftWidth: 3,
+    borderLeftColor: '#4A90E2',
+  },
+  formulaTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#4A90E2',
+    marginBottom: 4,
+  },
+  formulaText: {
+    color: '#fff',
+    fontSize: 14,
+  },
+  noteItem: {
+    flexDirection: 'row',
+    paddingVertical: 6,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255, 255, 255, 0.05)',
+  },
+  noteKey: {
+    fontSize: 14,
+    color: '#4A90E2',
+    fontWeight: 'bold',
+    width: 40,
+  },
+  noteValue: {
+    fontSize: 14,
+    color: '#ccc',
+    flex: 1,
+  },
+  footer: {
+    marginTop: 20,
+    marginBottom: 40,
+    alignItems: 'center',
+  },
+  footerText: {
+    fontSize: 12,
+    color: '#aaa',
+    marginVertical: 2,
   },
 });
