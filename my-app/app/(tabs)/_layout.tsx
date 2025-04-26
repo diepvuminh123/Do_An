@@ -71,6 +71,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="chat"
+        options={{
+          title: 'Trợ Giúp',
+          tabBarIcon: ({ color }) => <TabBarIcon name="comments" color={color} />,
+        }}
+      />
+      <Tabs.Screen
         name="technicalSpecification"
         options={{
           title: 'Thông Số Kỹ Thuật',
