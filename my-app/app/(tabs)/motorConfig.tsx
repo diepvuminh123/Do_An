@@ -15,6 +15,9 @@ import TinhCongSuatMoment from '../motorConfig/TinhCongSuatMoment';
 import TinhTiSoTruyen from '../motorConfig/TinhTiSoTruyen';
 import KiemNghiemHopGiamToc from '../motorConfig/KiemNghiemHopGiamToc';
 import BoTruyenXich from '../motorConfig/BoTruyenXich';
+import ThietKeHopGiamToc from '../motorConfig/ThietKeHopGiamToc';
+import TinhToanThietKeTruc from '../motorConfig/TinhToanThietKeTruc';
+import TinhToanOLan from '../motorConfig/TinhToanOLan';
 
 // Import hàm tính toán từ thư mục utils
 import { tinhToanYeuCauDongCo } from '../motorConfig/utils/TinhToanUtils';
@@ -122,6 +125,8 @@ export default function TabMotorConfigurationScreen() {
       Alert.alert("Lỗi tính toán", "Vui lòng kiểm tra lại dữ liệu đầu vào");
     }
   };
+  // === chuong 6 ===
+  const [showSection6, setShowSection6] = useState(false);
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -146,6 +151,66 @@ export default function TabMotorConfigurationScreen() {
         </View>
       )}
 
+      {/* 3. Phần Bộ truyền xích */}
+      <Pressable onPress={() => setShowSection5(!showSection5)}>
+        <Text style={styles.sectionTitle}>3. Tính toán thiết kế bộ truyền xích</Text>
+      </Pressable>
+      {showSection5 && (
+        <View style={styles.section}>
+          <BoTruyenXich 
+            power={ketQuaTinhToan.requiredPower}
+            inputRpm={ketQuaTinhToan.motorRpm}
+            outputRpm={ketQuaTinhToan.rotationSpeed}
+          />
+        </View>
+      )}
+
+      {/* 4. Phần Thiết kế bộ truyền trong hộp giảm tốc */}
+      <Pressable onPress={() => setShowSection4(!showSection4)}>
+        <Text style={styles.sectionTitle}>4. Thiết kế bộ truyền trong hộp giảm tốc</Text>
+      </Pressable>
+      {showSection4 && (
+        <View style={styles.section}>
+          <ThietKeHopGiamToc 
+            power={ketQuaTinhToan.requiredPower}
+            torque={ketQuaTinhToan.torque}
+            rotationSpeed={ketQuaTinhToan.rotationSpeed}
+            totalRatio={ketQuaTinhToan.totalRatio}
+          />
+        </View>
+      )}
+
+      {/* 5. Phần Tính toán thiết kế trục và then */}
+      <Pressable onPress={() => setShowSection5(!showSection5)}>
+        <Text style={styles.sectionTitle}>5. Tính toán thiết kế trục và then</Text>
+      </Pressable>
+      {showSection5 && (
+        <View style={styles.section}>
+          <TinhToanThietKeTruc 
+            power={ketQuaTinhToan.requiredPower}
+            torque={ketQuaTinhToan.torque}
+            rotationSpeed={ketQuaTinhToan.rotationSpeed}
+            totalRatio={ketQuaTinhToan.totalRatio}
+          />
+        </View>
+      )}
+      
+      {/* 6. Phần Tính toán ổ lăn */}
+      <Pressable onPress={() => setShowSection6(!showSection6)}>
+        <Text style={styles.sectionTitle}>6. Tính toán ổ lăn</Text>
+      </Pressable>
+      {showSection6 && (
+        <View style={styles.section}>
+          <TinhToanOLan 
+            power={ketQuaTinhToan.requiredPower}
+            torque={ketQuaTinhToan.torque}
+            rotationSpeed={ketQuaTinhToan.rotationSpeed}
+            totalRatio={ketQuaTinhToan.totalRatio}
+            shaftResults={null} // Có thể truyền kết quả từ TinhToanThietKeTruc nếu cần
+          />
+        </View>
+      )}
+    
       {/* 3. Phần Tỉ số truyền */}
       <Pressable onPress={() => setShowSection3(!showSection3)}>
         <Text style={styles.sectionTitle}>3. Tỉ số truyền</Text>
@@ -157,7 +222,7 @@ export default function TabMotorConfigurationScreen() {
           />
         </View>
       )}
-
+  
       {/* 4. Phần Kiểm nghiệm hộp giảm tốc */}
       <Pressable onPress={() => setShowSection4(!showSection4)}>
         <Text style={styles.sectionTitle}>4. Tính toán, kiểm nghiệm hộp giảm tốc</Text>
@@ -168,20 +233,6 @@ export default function TabMotorConfigurationScreen() {
             torque={ketQuaTinhToan.torque}
             rotationSpeed={ketQuaTinhToan.rotationSpeed}
             requiredPower={ketQuaTinhToan.requiredPower}
-          />
-        </View>
-      )}
-
-      {/* 5. Phần Bộ truyền xích */}
-      <Pressable onPress={() => setShowSection5(!showSection5)}>
-        <Text style={styles.sectionTitle}>5. Tính toán thiết kế bộ truyền xích</Text>
-      </Pressable>
-      {showSection5 && (
-        <View style={styles.section}>
-          <BoTruyenXich 
-            power={ketQuaTinhToan.requiredPower}
-            inputRpm={ketQuaTinhToan.motorRpm}
-            outputRpm={ketQuaTinhToan.rotationSpeed}
           />
         </View>
       )}
