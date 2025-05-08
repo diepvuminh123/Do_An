@@ -172,9 +172,9 @@ export default function TabMotorConfigurationScreen() {
         </View>
       )}
 
-      {/* 5. Phần Bộ truyền hở (xích, đai...) */}
+      {/* 5. Phần Bộ truyền xích */}
       <Pressable onPress={() => setShowSection5(!showSection5)}>
-        <Text style={styles.sectionTitle}>5. Bộ truyền hở (xích, đai...)</Text>
+        <Text style={styles.sectionTitle}>5. Tính toán thiết kế bộ truyền xích</Text>
       </Pressable>
       {showSection5 && (
         <View style={styles.section}>
