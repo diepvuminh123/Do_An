@@ -7,13 +7,12 @@ import {
   StyleSheet,
   Pressable,
   Alert,
+  TouchableOpacity
 } from 'react-native';
 
 // Import components từ thư mục motorConfig
 import ThongSoBangTai from '../motorConfig/ThongSoBangTai';
 import TinhCongSuatMoment from '../motorConfig/TinhCongSuatMoment';
-import TinhTiSoTruyen from '../motorConfig/TinhTiSoTruyen';
-import KiemNghiemHopGiamToc from '../motorConfig/KiemNghiemHopGiamToc';
 import BoTruyenXich from '../motorConfig/BoTruyenXich';
 import ThietKeHopGiamToc from '../motorConfig/ThietKeHopGiamToc';
 import TinhToanThietKeTruc from '../motorConfig/TinhToanThietKeTruc';
@@ -46,12 +45,25 @@ interface KetQuaTinhToan {
   motorRpm: number;            // Số vòng quay động cơ
 }
 
+// Danh sách 7 phương án cố định
+const predefinedOptions = [
+  { id: 1, name: "Phương án 1", forceF: "8500", beltSpeed: "0.8", drumDiameter: "500", lifetimeYears: "10", loadTimeRatioT1: "20", loadTimeRatioT2: "48", loadRatioT1: "1", loadRatioT2: "0.6" },
+  { id: 2, name: "Phương án 2", forceF: "7500", beltSpeed: "0.9", drumDiameter: "550", lifetimeYears: "8", loadTimeRatioT1: "36", loadTimeRatioT2: "15", loadRatioT1: "1", loadRatioT2: "0.5" },
+  { id: 3, name: "Phương án 3", forceF: "8000", beltSpeed: "0.9", drumDiameter: "510", lifetimeYears: "9", loadTimeRatioT1: "36", loadTimeRatioT2: "15", loadRatioT1: "1", loadRatioT2: "0.8" },
+  { id: 4, name: "Phương án 4", forceF: "8000", beltSpeed: "0.9", drumDiameter: "510", lifetimeYears: "9", loadTimeRatioT1: "36", loadTimeRatioT2: "15", loadRatioT1: "1", loadRatioT2: "0.8" },
+  { id: 5, name: "Phương án 5", forceF: "8500", beltSpeed: "0.8", drumDiameter: "500", lifetimeYears: "10", loadTimeRatioT1: "20", loadTimeRatioT2: "48", loadRatioT1: "1", loadRatioT2: "0.6" },
+  { id: 6, name: "Phương án 6", forceF: "7500", beltSpeed: "0.9", drumDiameter: "550", lifetimeYears: "8", loadTimeRatioT1: "36", loadTimeRatioT2: "15", loadRatioT1: "1", loadRatioT2: "0.5" },
+  { id: 7, name: "Phương án 7", forceF: "8500", beltSpeed: "0.9", drumDiameter: "550", lifetimeYears: "8", loadTimeRatioT1: "36", loadTimeRatioT2: "15", loadRatioT1: "1", loadRatioT2: "0.5" },
+];
+
 export default function TabMotorConfigurationScreen() {
   // === State quản lý trạng thái hiển thị các phần ===
   const [showCalculations, setShowCalculations] = useState(false);
   const [showSection3, setShowSection3] = useState(false);
   const [showSection4, setShowSection4] = useState(false);
   const [showSection5, setShowSection5] = useState(false);
+  const [showSection6, setShowSection6] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<number | null>(null);
 
   // === 1. State cho thông số tải ===
   const [thongSoTai, setThongSoTai] = useState<ThongSoTai>({
@@ -85,22 +97,53 @@ export default function TabMotorConfigurationScreen() {
     };
     
     setThongSoTai(newThongSoTai);
+  };
+
+  // === Hàm chọn phương án ===
+  const handleSelectOption = (optionId: number) => {
+    setSelectedOption(optionId);
+    const selectedPredefinedOption = predefinedOptions.find(option => option.id === optionId);
     
-    // Thực hiện tính toán nếu có đủ thông số đầu vào
-    if (newThongSoTai.forceF && 
-        newThongSoTai.beltSpeed && 
-        newThongSoTai.drumDiameter && 
-        newThongSoTai.loadTimeRatioT1 && 
-        newThongSoTai.loadTimeRatioT2 && 
-        newThongSoTai.loadRatioT1 && 
-        newThongSoTai.loadRatioT2) {
-      
-      try {
-        const ketQua = tinhToanYeuCauDongCo(newThongSoTai);
+    if (selectedPredefinedOption) {
+      setThongSoTai({
+        forceF: selectedPredefinedOption.forceF,
+        beltSpeed: selectedPredefinedOption.beltSpeed,
+        drumDiameter: selectedPredefinedOption.drumDiameter,
+        lifetimeYears: selectedPredefinedOption.lifetimeYears,
+        loadTimeRatioT1: selectedPredefinedOption.loadTimeRatioT1,
+        loadTimeRatioT2: selectedPredefinedOption.loadTimeRatioT2,
+        loadRatioT1: selectedPredefinedOption.loadRatioT1,
+        loadRatioT2: selectedPredefinedOption.loadRatioT2,
+      });
+    }
+  };
+
+  // === Hàm thực hiện tính toán ===
+  const handleCalculate = () => {
+    try {
+      // Kiểm tra đủ dữ liệu đầu vào
+      if (thongSoTai.forceF && 
+          thongSoTai.beltSpeed && 
+          thongSoTai.drumDiameter && 
+          thongSoTai.loadTimeRatioT1 && 
+          thongSoTai.loadTimeRatioT2 && 
+          thongSoTai.loadRatioT1 && 
+          thongSoTai.loadRatioT2) {
+        
+        const ketQua = tinhToanYeuCauDongCo(thongSoTai);
         setKetQuaTinhToan(ketQua);
-      } catch (error) {
-        Alert.alert("Lỗi tính toán", "Vui lòng kiểm tra lại dữ liệu đầu vào");
+        
+        // Mở tất cả các phần tính toán
+        setShowCalculations(true);
+        setShowSection3(true);
+        setShowSection4(true);
+        setShowSection5(true);
+        setShowSection6(true);
+      } else {
+        Alert.alert("Thiếu dữ liệu", "Vui lòng điền đầy đủ thông số tải trước khi tính toán");
       }
+    } catch (error) {
+      Alert.alert("Lỗi tính toán", "Vui lòng kiểm tra lại dữ liệu đầu vào");
     }
   };
 
@@ -125,8 +168,6 @@ export default function TabMotorConfigurationScreen() {
       Alert.alert("Lỗi tính toán", "Vui lòng kiểm tra lại dữ liệu đầu vào");
     }
   };
-  // === chuong 6 ===
-  const [showSection6, setShowSection6] = useState(false);
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -135,10 +176,43 @@ export default function TabMotorConfigurationScreen() {
       {/* 1. Phần Thông số tải và băng tải */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>1. Thông số tải và băng tải</Text>
+        
+        {/* Phần lựa chọn phương án tính toán */}
+        <View style={styles.optionsContainer}>
+          <Text style={styles.optionsTitle}>Lựa chọn phương án:</Text>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.optionsScrollView}>
+            {predefinedOptions.map((option) => (
+              <TouchableOpacity
+                key={option.id}
+                style={[
+                  styles.optionButton,
+                  selectedOption === option.id && styles.optionButtonSelected,
+                ]}
+                onPress={() => handleSelectOption(option.id)}
+              >
+                <Text style={[
+                  styles.optionButtonText,
+                  selectedOption === option.id && styles.optionButtonTextSelected,
+                ]}>
+                  {option.name}
+                </Text>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+        </View>
+        
         <ThongSoBangTai
           thongSo={thongSoTai}
           onThongSoChange={handleThongSoTaiChange}
         />
+        
+        {/* Nút tính toán */}
+        <TouchableOpacity 
+          style={styles.calculateButton} 
+          onPress={handleCalculate}
+        >
+          <Text style={styles.calculateButtonText}>Tính toán</Text>
+        </TouchableOpacity>
       </View>
 
       {/* 2. Phần Tính toán công suất và mô-men */}
@@ -152,10 +226,10 @@ export default function TabMotorConfigurationScreen() {
       )}
 
       {/* 3. Phần Bộ truyền xích */}
-      <Pressable onPress={() => setShowSection5(!showSection5)}>
+      <Pressable onPress={() => setShowSection3(!showSection3)}>
         <Text style={styles.sectionTitle}>3. Tính toán thiết kế bộ truyền xích</Text>
       </Pressable>
-      {showSection5 && (
+      {showSection3 && (
         <View style={styles.section}>
           <BoTruyenXich 
             power={ketQuaTinhToan.requiredPower}
@@ -210,32 +284,6 @@ export default function TabMotorConfigurationScreen() {
           />
         </View>
       )}
-    
-      {/* 3. Phần Tỉ số truyền */}
-      <Pressable onPress={() => setShowSection3(!showSection3)}>
-        <Text style={styles.sectionTitle}>3. Tỉ số truyền</Text>
-      </Pressable>
-      {showSection3 && (
-        <View style={styles.section}>
-          <TinhTiSoTruyen 
-            initialTotalRatio={ketQuaTinhToan.totalRatio}
-          />
-        </View>
-      )}
-  
-      {/* 4. Phần Kiểm nghiệm hộp giảm tốc */}
-      <Pressable onPress={() => setShowSection4(!showSection4)}>
-        <Text style={styles.sectionTitle}>4. Tính toán, kiểm nghiệm hộp giảm tốc</Text>
-      </Pressable>
-      {showSection4 && (
-        <View style={styles.section}>
-          <KiemNghiemHopGiamToc 
-            torque={ketQuaTinhToan.torque}
-            rotationSpeed={ketQuaTinhToan.rotationSpeed}
-            requiredPower={ketQuaTinhToan.requiredPower}
-          />
-        </View>
-      )}
 
       <Pressable 
         style={styles.recommendButton} 
@@ -271,6 +319,49 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '600',
     marginBottom: 15,
+  },
+  optionsContainer: {
+    marginBottom: 20,
+  },
+  optionsTitle: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+    marginBottom: 8,
+  },
+  optionsScrollView: {
+    marginBottom: 10,
+  },
+  optionButton: {
+    backgroundColor: 'rgba(44, 62, 80, 0.6)',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 8,
+    marginRight: 8,
+    marginBottom: 8,
+  },
+  optionButtonSelected: {
+    backgroundColor: '#4A90E2',
+  },
+  optionButtonText: {
+    color: '#fff',
+    fontSize: 12,
+  },
+  optionButtonTextSelected: {
+    fontWeight: '600',
+  },
+  calculateButton: {
+    backgroundColor: '#2ecc71',
+    borderRadius: 8,
+    paddingVertical: 12,
+    marginTop: 16,
+    marginBottom: 8,
+  },
+  calculateButtonText: {
+    color: '#fff',
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight: '600',
   },
   recommendButton: {
     backgroundColor: '#4A90E2',

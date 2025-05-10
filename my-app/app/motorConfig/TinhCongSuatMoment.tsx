@@ -221,29 +221,6 @@ const TinhCongSuatMoment = ({ ketQua }: TinhCongSuatMomentProps) => {
 
   return (
     <View>
-      {/* Phần lựa chọn phương án tính toán */}
-      <View style={styles.optionsContainer}>
-        <Text style={styles.optionsTitle}>Lựa chọn phương án:</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          {predefinedOptions.map((option) => (
-            <TouchableOpacity
-              key={option.id}
-              style={[
-                styles.optionButton,
-                selectedOption === option.id && styles.optionButtonSelected,
-              ]}
-              onPress={() => setSelectedOption(option.id)}
-            >
-              <Text style={[
-                styles.optionButtonText,
-                selectedOption === option.id && styles.optionButtonTextSelected,
-              ]}>
-                {option.name}
-              </Text>
-            </TouchableOpacity>
-          ))}
-        </ScrollView>
-      </View>
 
       {/* Kết quả tính toán chính */}
       <ResultDisplay 
