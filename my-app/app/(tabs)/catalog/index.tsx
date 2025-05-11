@@ -14,7 +14,7 @@ import {
 import { router } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import axios from 'axios';
-const API_URL = 'http://192.168.1.10:3000';
+const API_URL = 'http://localhost:9898/api';
 
 // Định nghĩa interface cho item hộp giảm tốc
 interface GearboxItem {

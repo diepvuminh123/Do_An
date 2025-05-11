@@ -53,6 +53,6 @@ gearboxSchema.virtual('detailUrl').get(function() {
 gearboxSchema.set('toJSON', { virtuals: true });
 gearboxSchema.set('toObject', { virtuals: true });
 
-const Gearbox = mongoose.model('Gearbox', gearboxSchema, 'catalog'); // Collection name là 'catalog'
+const Gearbox = mongoose.model('Gearbox', gearboxSchema, 'gearBox');
 
 module.exports = Gearbox;
