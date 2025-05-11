@@ -92,6 +92,13 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <TabBarIcon name="info-circle" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="calculationHistory"
+        options={{
+          title: 'Lịch Sử Tính Toán',
+          tabBarIcon: ({ color }) => <TabBarIcon name="history" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }
