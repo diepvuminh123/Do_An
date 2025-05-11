@@ -72,7 +72,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="catalog"
+        name="catalog/index"
         options={{
           title: 'Danh Mục',
           tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
