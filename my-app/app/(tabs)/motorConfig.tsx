@@ -140,7 +140,7 @@ export default function TabMotorConfigurationScreen() {
         setShowSection5(true);
         setShowSection6(true);
       } else {
-        Alert.alert("Thiếu dữ liệu", "Vui lòng điền đầy đủ thông số tải trước khi tính toán");
+        // Alert.alert("Thiếu dữ liệu", "Vui lòng điền đầy đủ thông số tải trước khi tính toán");
       }
     } catch (error) {
       Alert.alert("Lỗi tính toán", "Vui lòng kiểm tra lại dữ liệu đầu vào");
@@ -204,6 +204,7 @@ export default function TabMotorConfigurationScreen() {
         <ThongSoBangTai
           thongSo={thongSoTai}
           onThongSoChange={handleThongSoTaiChange}
+          onCalculatePress={handleCalculate}
         />
         
         {/* Nút tính toán */}
