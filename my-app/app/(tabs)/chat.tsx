@@ -287,7 +287,7 @@ export default function ChatboxScreen() {
               placeholderTextColor="#8a8a8a"
               value={inputText}
               onChangeText={setInputText}
-              multiline={false}
+              multiline={true}
               numberOfLines={1}
               autoCapitalize="none"
               autoCorrect={false}

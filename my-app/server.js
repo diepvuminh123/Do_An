@@ -3,6 +3,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 // const morgan = require('morgan');
+const cors = require('cors');
 const dotenv = require('dotenv');
 const app = express();
 
@@ -15,7 +16,8 @@ const DB = process.env.DATABASE.replace(
 
 
 // Middleware
-// app.use(express.json());
+app.use(express.json());
+app.use(cors());
 // app.use(morgan('dev'));
 
 // MongoDB connection
@@ -27,6 +29,12 @@ mongoose.connect(DB)
 })
 .catch((err) => console.error('❌ DB connection error:', err));
 
+// Import controllers
+const catalogController = require('./controllers/catalogController');
+
+// API Routes
+app.get('/api/gearboxes', catalogController.getAllGearboxes);
+app.get('/api/gearboxes/:id', catalogController.getGearboxById);
 // Route mẫu
 // app.get('/', (req, res) => {
 //   res.send('Hello from Express + Mongoose!');
