@@ -13,7 +13,7 @@ import {
 import { useLocalSearchParams, router } from 'expo-router';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import axios from 'axios';
-const API_URL = 'http://localhost:9898/api';
+const API_URL = 'http://localhost:9898';
 
 // Định nghĩa interface cho item hộp giảm tốc
 interface GearboxItem {
