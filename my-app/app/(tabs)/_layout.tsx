@@ -53,14 +53,14 @@ export default function TabLayout() {
       <Tabs.Screen
         name="motorConfig"
         options={{
-          title: 'Cấu Hình Động Cơ',
+          title: 'Tính toán Cấu Hình',
           tabBarIcon: ({ color }) => <TabBarIcon name="cog" color={color} />,
         }}
       />
       <Tabs.Screen
         name="gearboxRecommendations"
         options={{
-          title: 'Gợi Ý Bộ Truyền',
+          title: 'Gợi Ý sản phẩm',
           tabBarIcon: ({ color }) => <TabBarIcon name="gears" color={color} />,
         }}
       />
@@ -74,7 +74,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="catalog/index"
         options={{
-          title: 'Danh Mục',
+          title: 'Danh Mục sản phẩm',
           tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
         }}
       />

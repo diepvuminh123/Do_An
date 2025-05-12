@@ -14,6 +14,7 @@ interface TinhToanOLanProps {
   rotationSpeed: number;
   totalRatio: number;
   shaftResults: any; // From previous chapter calculations
+  onDetailsUpdate?: (details: any) => void;
 }
 
 /**

@@ -59,6 +59,7 @@ interface PredefinedOption {
 // Props cho component
 interface TinhCongSuatMomentProps {
   ketQua: KetQuaTinhToan;
+  onDetailsUpdate?: (details: any) => void;
 }
 
 /**

@@ -15,6 +15,7 @@ interface TinhToanThietKeTrucProps {
   torque: number;        // Mô-men xoắn (N.mm)
   rotationSpeed: number; // Số vòng quay (vg/ph)
   totalRatio: number;    // Tỉ số truyền tổng
+  onDetailsUpdate?: (details: any) => void;
 }
 
 // Interface for shaft design results

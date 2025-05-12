@@ -14,6 +14,7 @@ interface BoTruyenXichProps {
   power: number;           // Công suất cần truyền (kW)
   inputRpm: number;        // Số vòng quay đĩa dẫn (vg/ph)
   outputRpm: number;       // Số vòng quay đĩa bị dẫn (vg/ph)
+  onDetailsUpdate?: (details: any) => void;
 }
 
 // Interface cho kết quả tính toán đĩa xích

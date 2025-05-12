@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { router } from 'expo-router';
 import {
   View,
@@ -10,7 +10,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-// Import components từ thư mục motorConfig
+// Import components from motorConfig folder
 import ThongSoBangTai from '../motorConfig/ThongSoBangTai';
 import TinhCongSuatMoment from '../motorConfig/TinhCongSuatMoment';
 import BoTruyenXich from '../motorConfig/BoTruyenXich';
@@ -18,10 +18,10 @@ import ThietKeHopGiamToc from '../motorConfig/ThietKeHopGiamToc';
 import TinhToanThietKeTruc from '../motorConfig/TinhToanThietKeTruc';
 import TinhToanOLan from '../motorConfig/TinhToanOLan';
 
-// Import hàm tính toán từ thư mục utils
+// Import calculation functions from utils
 import { tinhToanYeuCauDongCo } from '../motorConfig/utils/TinhToanUtils';
 
-// Định nghĩa interface cho thông số tải
+// Load parameters interface
 interface ThongSoTai {
   forceF: string;
   beltSpeed: string;
@@ -33,7 +33,7 @@ interface ThongSoTai {
   loadRatioT2: string;
 }
 
-// Định nghĩa interface cho kết quả tính toán
+// Calculation results interface
 interface KetQuaTinhToan {
   workingPower: number;        // Công suất làm việc Plv
   equivalentPower: number;     // Công suất tương đương Ptd
@@ -45,7 +45,67 @@ interface KetQuaTinhToan {
   motorRpm: number;            // Số vòng quay động cơ
 }
 
-// Danh sách 7 phương án cố định
+// Comprehensive calculation data interface for report generation
+interface CalculationHistoryData {
+  // Input parameters
+  thongSoTai: ThongSoTai;
+  
+  // Chapter 2: Power and Torque
+  ketQuaTinhToan: KetQuaTinhToan;
+  dynamicDetails?: {
+    efficiencyComponents?: any;
+    transmissionRatios?: any;
+    shaftsDetails?: any; 
+  };
+  selectedMotor?: {
+    model: string;
+    power: number;
+    rpm: number;
+    efficiency: number;
+    powerFactor?: number;
+    torqueRatio?: number;
+    massKg?: number;
+  };
+  
+  // Chapter 3: Chain Drive
+  chainDriveResults?: {
+    materialSelection?: any;
+    sprockets?: any;
+    chainResult?: any;
+  };
+  
+  // Chapter 4: Gearbox Design
+  gearboxDesignResults?: {
+    materials?: any;
+    allowableStresses?: any;
+    fastGear?: any;
+    slowGear?: any;
+  };
+  
+  // Chapter 5: Shaft Design
+  shaftDesignResults?: {
+    materials?: any;
+    shaft1Results?: any;
+    shaft2Results?: any;
+    shaft3Results?: any;
+    keyResults?: any;
+  };
+  
+  // Chapter 6: Bearing Calculation
+  bearingResults?: {
+    shaft1Bearings?: any;
+    shaft2Bearings?: any;
+    shaft3Bearings?: any;
+  };
+  
+  // Selected gearbox from recommendations
+  selectedGearbox?: any;
+  
+  // Calculation timestamp
+  timestamp: string;
+}
+
+// Fixed predefined options for calculation
 const predefinedOptions = [
   { id: 1, name: "Phương án 1", forceF: "8500", beltSpeed: "0.8", drumDiameter: "500", lifetimeYears: "10", loadTimeRatioT1: "20", loadTimeRatioT2: "48", loadRatioT1: "1", loadRatioT2: "0.6" },
   { id: 2, name: "Phương án 2", forceF: "7500", beltSpeed: "0.9", drumDiameter: "550", lifetimeYears: "8", loadTimeRatioT1: "36", loadTimeRatioT2: "15", loadRatioT1: "1", loadRatioT2: "0.5" },
@@ -57,7 +117,7 @@ const predefinedOptions = [
 ];
 
 export default function TabMotorConfigurationScreen() {
-  // === State quản lý trạng thái hiển thị các phần ===
+  // === Section visibility states ===
   const [showCalculations, setShowCalculations] = useState(false);
   const [showSection3, setShowSection3] = useState(false);
   const [showSection4, setShowSection4] = useState(false);
@@ -65,7 +125,7 @@ export default function TabMotorConfigurationScreen() {
   const [showSection6, setShowSection6] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
 
-  // === 1. State cho thông số tải ===
+  // === 1. Load parameter state ===
   const [thongSoTai, setThongSoTai] = useState<ThongSoTai>({
     forceF: '',
     beltSpeed: '',
@@ -77,7 +137,7 @@ export default function TabMotorConfigurationScreen() {
     loadRatioT2: '',
   });
 
-  // === 2. State cho kết quả tính toán ===
+  // === 2. Calculation result state ===
   const [ketQuaTinhToan, setKetQuaTinhToan] = useState<KetQuaTinhToan>({
     workingPower: 0,        // Công suất làm việc Plv
     equivalentPower: 0,     // Công suất tương đương Ptd
@@ -88,8 +148,19 @@ export default function TabMotorConfigurationScreen() {
     totalRatio: 0,          // Tỉ số truyền tổng cộng ut
     motorRpm: 0,            // Số vòng quay động cơ
   });
+  
+  // === State for detailed calculation history data ===
+  const [calculationHistoryData, setCalculationHistoryData] = useState<CalculationHistoryData | null>(null);
+  
+  // === State for additional details from child components ===
+  const [selectedMotor, setSelectedMotor] = useState<any | null>(null);
+  const [chainDriveResults, setChainDriveResults] = useState<any | null>(null);
+  const [gearboxDesignResults, setGearboxDesignResults] = useState<any | null>(null);
+  const [shaftDesignResults, setShaftDesignResults] = useState<any | null>(null);
+  const [bearingResults, setBearingResults] = useState<any | null>(null);
+  const [dynamicDetails, setDynamicDetails] = useState<any | null>(null);
 
-  // === Hàm xử lý khi thay đổi thông số tải ===
+  // === Handler for load parameter changes ===
   const handleThongSoTaiChange = (param: keyof ThongSoTai, value: string) => {
     const newThongSoTai = {
       ...thongSoTai,
@@ -99,7 +170,7 @@ export default function TabMotorConfigurationScreen() {
     setThongSoTai(newThongSoTai);
   };
 
-  // === Hàm chọn phương án ===
+  // === Handler for option selection ===
   const handleSelectOption = (optionId: number) => {
     setSelectedOption(optionId);
     const selectedPredefinedOption = predefinedOptions.find(option => option.id === optionId);
@@ -118,10 +189,10 @@ export default function TabMotorConfigurationScreen() {
     }
   };
 
-  // === Hàm thực hiện tính toán ===
+  // === Handler for calculation execution ===
   const handleCalculate = () => {
     try {
-      // Kiểm tra đủ dữ liệu đầu vào
+      // Check for complete input data
       if (thongSoTai.forceF && 
           thongSoTai.beltSpeed && 
           thongSoTai.drumDiameter && 
@@ -133,7 +204,7 @@ export default function TabMotorConfigurationScreen() {
         const ketQua = tinhToanYeuCauDongCo(thongSoTai);
         setKetQuaTinhToan(ketQua);
         
-        // Mở tất cả các phần tính toán
+        // Open all calculation sections
         setShowCalculations(true);
         setShowSection3(true);
         setShowSection4(true);
@@ -147,14 +218,71 @@ export default function TabMotorConfigurationScreen() {
     }
   };
 
-  // === Hàm xử lý khi nhấn nút tính toán và chuyển đến trang gợi ý ===
+  // === Handler for calculation details from TinhCongSuatMoment ===
+  const handleDynamicDetailsUpdate = (details: any) => {
+    setDynamicDetails(details);
+    setSelectedMotor(details.selectedMotor);
+  };
+  
+  // === Handler for calculation details from BoTruyenXich ===
+  const handleChainDetailsUpdate = (details: any) => {
+    setChainDriveResults(details);
+  };
+  
+  // === Handler for calculation details from ThietKeHopGiamToc ===
+  const handleGearboxDetailsUpdate = (details: any) => {
+    setGearboxDesignResults(details);
+  };
+  
+  // === Handler for calculation details from TinhToanThietKeTruc ===
+  const handleShaftDetailsUpdate = (details: any) => {
+    setShaftDesignResults(details);
+  };
+  
+  // === Handler for calculation details from TinhToanOLan ===
+  const handleBearingDetailsUpdate = (details: any) => {
+    setBearingResults(details);
+  };
+
+  // === Handler for save calculation history ===
+  const handleSaveCalculationHistory = () => {
+    try {
+      // Create comprehensive calculation history data
+      const historyData: CalculationHistoryData = {
+        thongSoTai,
+        ketQuaTinhToan,
+        dynamicDetails,
+        selectedMotor,
+        chainDriveResults,
+        gearboxDesignResults,
+        shaftDesignResults,
+        bearingResults,
+        timestamp: new Date().toISOString(),
+      };
+      
+      // Store the data
+      setCalculationHistoryData(historyData);
+      
+      // Navigate to the report generator with the data
+      router.push({
+        pathname: '/(tabs)/reportGenerator',
+        params: {
+          historyData: JSON.stringify(historyData)
+        }
+      });
+    } catch (error) {
+      Alert.alert("Lỗi", "Không thể lưu lịch sử tính toán. Vui lòng thử lại sau.");
+    }
+  };
+
+  // === Handler for calculation and gearbox recommendation ===
   const handleTinhToanVaGoiY = () => {
     try {
-      // Tính toán lại để đảm bảo dữ liệu mới nhất
+      // Recalculate to ensure latest data
       const ketQua = tinhToanYeuCauDongCo(thongSoTai);
       setKetQuaTinhToan(ketQua);
       
-      // Chuyển đến trang gợi ý với các tham số
+      // Navigate to recommendation page with parameters
       router.push({
         pathname: '/gearboxRecommendations',
         params: {
@@ -173,11 +301,11 @@ export default function TabMotorConfigurationScreen() {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Cấu hình Hộp Giảm Tốc</Text>
 
-      {/* 1. Phần Thông số tải và băng tải */}
+      {/* 1. Load parameters and conveyor section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>1. Thông số tải và băng tải</Text>
         
-        {/* Phần lựa chọn phương án tính toán */}
+        {/* Option selection section */}
         <View style={styles.optionsContainer}>
           <Text style={styles.optionsTitle}>Lựa chọn phương án:</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.optionsScrollView}>
@@ -207,7 +335,7 @@ export default function TabMotorConfigurationScreen() {
           onCalculatePress={handleCalculate}
         />
         
-        {/* Nút tính toán */}
+        {/* Calculate button */}
         <TouchableOpacity 
           style={styles.calculateButton} 
           onPress={handleCalculate}
@@ -216,17 +344,20 @@ export default function TabMotorConfigurationScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* 2. Phần Tính toán công suất và mô-men */}
+      {/* 2. Power and torque calculation section */}
       <Pressable onPress={() => setShowCalculations(!showCalculations)}>
         <Text style={styles.sectionTitle}>2. Tính toán công suất và mô-men</Text>
       </Pressable>
       {showCalculations && (
         <View style={styles.section}>
-          <TinhCongSuatMoment ketQua={ketQuaTinhToan} />
+          <TinhCongSuatMoment 
+            ketQua={ketQuaTinhToan} 
+            onDetailsUpdate={handleDynamicDetailsUpdate}
+          />
         </View>
       )}
 
-      {/* 3. Phần Bộ truyền xích */}
+      {/* 3. Chain drive section */}
       <Pressable onPress={() => setShowSection3(!showSection3)}>
         <Text style={styles.sectionTitle}>3. Tính toán thiết kế bộ truyền xích</Text>
       </Pressable>
@@ -236,11 +367,12 @@ export default function TabMotorConfigurationScreen() {
             power={ketQuaTinhToan.requiredPower}
             inputRpm={ketQuaTinhToan.motorRpm}
             outputRpm={ketQuaTinhToan.rotationSpeed}
+            onDetailsUpdate={handleChainDetailsUpdate}
           />
         </View>
       )}
 
-      {/* 4. Phần Thiết kế bộ truyền trong hộp giảm tốc */}
+      {/* 4. Gearbox design section */}
       <Pressable onPress={() => setShowSection4(!showSection4)}>
         <Text style={styles.sectionTitle}>4. Thiết kế bộ truyền trong hộp giảm tốc</Text>
       </Pressable>
@@ -251,11 +383,12 @@ export default function TabMotorConfigurationScreen() {
             torque={ketQuaTinhToan.torque}
             rotationSpeed={ketQuaTinhToan.rotationSpeed}
             totalRatio={ketQuaTinhToan.totalRatio}
+            onDetailsUpdate={handleGearboxDetailsUpdate}
           />
         </View>
       )}
 
-      {/* 5. Phần Tính toán thiết kế trục và then */}
+      {/* 5. Shaft and key design section */}
       <Pressable onPress={() => setShowSection5(!showSection5)}>
         <Text style={styles.sectionTitle}>5. Tính toán thiết kế trục và then</Text>
       </Pressable>
@@ -266,11 +399,12 @@ export default function TabMotorConfigurationScreen() {
             torque={ketQuaTinhToan.torque}
             rotationSpeed={ketQuaTinhToan.rotationSpeed}
             totalRatio={ketQuaTinhToan.totalRatio}
+            onDetailsUpdate={handleShaftDetailsUpdate}
           />
         </View>
       )}
       
-      {/* 6. Phần Tính toán ổ lăn */}
+      {/* 6. Bearing calculation section */}
       <Pressable onPress={() => setShowSection6(!showSection6)}>
         <Text style={styles.sectionTitle}>6. Tính toán ổ lăn</Text>
       </Pressable>
@@ -281,17 +415,28 @@ export default function TabMotorConfigurationScreen() {
             torque={ketQuaTinhToan.torque}
             rotationSpeed={ketQuaTinhToan.rotationSpeed}
             totalRatio={ketQuaTinhToan.totalRatio}
-            shaftResults={null} // Có thể truyền kết quả từ TinhToanThietKeTruc nếu cần
+            shaftResults={shaftDesignResults}
+            onDetailsUpdate={handleBearingDetailsUpdate}
           />
         </View>
       )}
 
-      <Pressable 
-        style={styles.recommendButton} 
-        onPress={handleTinhToanVaGoiY}
-      >
-        <Text style={styles.recommendText}>Tính Toán / Gợi ý bộ truyền</Text>
-      </Pressable>
+      {/* Action buttons */}
+      <View style={styles.actionButtonsContainer}>
+        <Pressable 
+          style={styles.saveHistoryButton} 
+          onPress={handleSaveCalculationHistory}
+        >
+          <Text style={styles.saveHistoryText}>Lưu lịch sử tính toán</Text>
+        </Pressable>
+        
+        <Pressable 
+          style={styles.recommendButton} 
+          onPress={handleTinhToanVaGoiY}
+        >
+          <Text style={styles.recommendText}>Gợi ý bộ truyền</Text>
+        </Pressable>
+      </View>
     </ScrollView>
   );
 }
@@ -364,12 +509,33 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
+  actionButtonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 20,
+    marginBottom: 40,
+  },
+  saveHistoryButton: {
+    backgroundColor: '#27ae60',
+    borderRadius: 25,
+    paddingVertical: 16,
+    paddingHorizontal: 20,
+    flex: 1,
+    marginRight: 10,
+  },
+  saveHistoryText: {
+    color: '#fff',
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight: '600',
+  },
   recommendButton: {
     backgroundColor: '#4A90E2',
     borderRadius: 25,
     paddingVertical: 16,
-    marginTop: 20,
-    marginBottom: 40,
+    paddingHorizontal: 20,
+    flex: 1,
+    marginLeft: 10,
   },
   recommendText: {
     color: '#fff',
