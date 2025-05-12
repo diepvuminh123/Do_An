@@ -1,0 +1,75 @@
+1. Collection: Users
+{
+  _id: ObjectId,
+  username: String,
+  email: String,
+  password: String, // đã mã hóa
+  createdAt: Date,
+  updatedAt: Date
+}
+2. Collection: Projects
+{
+  _id: ObjectId,
+  userId: ObjectId, // Liên kết với user
+  name: String,
+  description: String,
+  createdAt: Date,
+  updatedAt: Date,
+  inputs: {
+    force: Number,        // Lực vòng trên băng tải (N)
+    velocity: Number,     // Vận tốc băng tải (m/s)
+    diameter: Number,     // Đường kính tang (mm)
+    serviceYears: Number, // Thời gian phục vụ (năm)
+    loadMode: {
+      T1: Number,         // Mô-men tải thứ nhất
+      t1: Number,         // Thời gian tải thứ nhất (giây)
+      T2: Number,         // Mô-men tải thứ hai
+      t2: Number          // Thời gian tải thứ hai (giây)
+    },
+    workingConditions: {
+      rotationDirection: String,    // "one-way" - Quay một chiều
+      impactType: String,           // "light" - Tải va đập nhẹ
+      shiftsPerDay: Number,         // 2 ca
+      daysPerYear: Number,          // 300 ngày
+      hoursPerShift: Number         // 8 giờ
+    }
+  },
+  calculationResults: {
+    // Lưu kết quả tính toán
+    requiredPower: Number,         // Công suất cần thiết (kW)
+    motorSpeed: Number,            // Tốc độ quay cần thiết (vg/ph)
+    transmissionRatio: Number,     // Tỉ số truyền
+    shaftDimensions: [{            // Kích thước các trục
+      name: String,
+      diameter: Number,
+      length: Number
+    }],
+    selectedMotor: {               // Động cơ được chọn
+      model: String,
+      power: Number,
+      speed: Number
+    },
+    gearbox: {                     // Thông số hộp giảm tốc
+      stageRatios: [Number],
+      dimensions: Object
+    },
+    chain: {                       // Thông số bộ truyền xích
+      type: String,
+      specifications: Object
+    }
+  }
+}
+3. Collection: Calculations
+{
+  _id: ObjectId,
+  projectId: ObjectId,  // Liên kết với project
+  userId: ObjectId,     // Liên kết với user
+  timestamp: Date,
+  inputs: {
+    // Giống với inputs trong Projects
+  }, 
+  results: {
+    // Giống với calculationResults trong Projects
+  },
+  version: Number       // Để theo dõi các phiên bản tính toán
+}

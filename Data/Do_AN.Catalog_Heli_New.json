@@ -1,0 +1,348 @@
+[{
+  "_id": {
+    "$oid": "67f2836405dde9308c91866b"
+  },
+  "loai": "Helical",
+  "duLieu": [
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "5:1",
+      "tiLeThucTe": 4.88,
+      "tocDoRa": 359,
+      "congSuatDauVao": 5.91,
+      "moMenXoay": 970,
+      "taiTrucDoc": 305,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "5:1",
+      "tiLeThucTe": 4.88,
+      "tocDoRa": 359,
+      "congSuatDauVao": 5.91,
+      "moMenXoay": 970,
+      "taiTrucDoc": 305,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "10:1",
+      "tiLeThucTe": 10.02,
+      "tocDoRa": 175,
+      "congSuatDauVao": 4.04,
+      "moMenXoay": 1360,
+      "taiTrucDoc": 388,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "15:1",
+      "tiLeThucTe": 15.75,
+      "tocDoRa": 111,
+      "congSuatDauVao": 2.99,
+      "moMenXoay": 1580,
+      "taiTrucDoc": 451,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "20:1",
+      "tiLeThucTe": 19.95,
+      "tocDoRa": 88,
+      "congSuatDauVao": 2.49,
+      "moMenXoay": 1670,
+      "taiTrucDoc": 489,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "30:1",
+      "tiLeThucTe": 31.02,
+      "tocDoRa": 56,
+      "congSuatDauVao": 1.75,
+      "moMenXoay": 1770,
+      "taiTrucDoc": 565,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "40:1",
+      "tiLeThucTe": 40.08,
+      "tocDoRa": 44,
+      "congSuatDauVao": 1.35,
+      "moMenXoay": 1770,
+      "taiTrucDoc": 615,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "50:1",
+      "tiLeThucTe": 52.24,
+      "tocDoRa": 33,
+      "congSuatDauVao": 1.04,
+      "moMenXoay": 1770,
+      "taiTrucDoc": 670,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 37,
+      "tiLeDanhNghia": "60:1",
+      "tiLeThucTe": 60.84,
+      "tocDoRa": 29,
+      "congSuatDauVao": 0.89,
+      "moMenXoay": 1770,
+      "taiTrucDoc": 705,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 47,
+      "tiLeDanhNghia": "5:1",
+      "tiLeThucTe": 4.85,
+      "tocDoRa": 361,
+      "congSuatDauVao": 9.59,
+      "moMenXoay": 1565,
+      "taiTrucDoc": 440,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 47,
+      "tiLeDanhNghia": "10:1",
+      "tiLeThucTe": 11.27,
+      "tocDoRa": 155,
+      "congSuatDauVao": 5.95,
+      "moMenXoay": 2255,
+      "taiTrucDoc": 590,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 47,
+      "tiLeDanhNghia": "15:1",
+      "tiLeThucTe": 15.18,
+      "tocDoRa": 115,
+      "congSuatDauVao": 4.87,
+      "moMenXoay": 2490,
+      "taiTrucDoc": 650,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 47,
+      "tiLeDanhNghia": "20:1",
+      "tiLeThucTe": 18.37,
+      "tocDoRa": 95,
+      "congSuatDauVao": 4.29,
+      "moMenXoay": 2650,
+      "taiTrucDoc": 690,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 47,
+      "tiLeDanhNghia": "30:1",
+      "tiLeThucTe": 31.83,
+      "tocDoRa": 55,
+      "congSuatDauVao": 2.73,
+      "moMenXoay": 2830,
+      "taiTrucDoc": 835,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 47,
+      "tiLeDanhNghia": "40:1",
+      "tiLeThucTe": 41.51,
+      "tocDoRa": 42,
+      "congSuatDauVao": 2.09,
+      "moMenXoay": 2830,
+      "taiTrucDoc": 910,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 47,
+      "tiLeDanhNghia": "50:1",
+      "tiLeThucTe": 52.84,
+      "tocDoRa": 33,
+      "congSuatDauVao": 1.64,
+      "moMenXoay": 2830,
+      "taiTrucDoc": 985,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 47,
+      "tiLeDanhNghia": "60:1",
+      "tiLeThucTe": 63.37,
+      "tocDoRa": 28,
+      "congSuatDauVao": 1.37,
+      "moMenXoay": 2830,
+      "taiTrucDoc": 1050,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": "RX57",
+      "tiLeDanhNghia": "3:1",
+      "tiLeThucTe": 3.19,
+      "tocDoRa": 549,
+      "congSuatDauVao": 4.04,
+      "moMenXoay": 447,
+      "taiTrucDoc": 133,
+      "soTang": 1
+    },
+    {
+      "kichThuocHopSo": "RX67",
+      "tiLeDanhNghia": "2:1",
+      "tiLeThucTe": 1.86,
+      "tocDoRa": 941,
+      "congSuatDauVao": 9.43,
+      "moMenXoay": 617,
+      "taiTrucDoc": 43,
+      "soTang": 1
+    },
+    {
+      "kichThuocHopSo": "RX67",
+      "tiLeDanhNghia": "2:5",
+      "tiLeThucTe": 2.35,
+      "tocDoRa": 745,
+      "congSuatDauVao": 7.56,
+      "moMenXoay": 616,
+      "taiTrucDoc": 94,
+      "soTang": 1
+    },
+    {
+      "kichThuocHopSo": "RX67",
+      "tiLeDanhNghia": "3:5",
+      "tiLeThucTe": 3.52,
+      "tocDoRa": 497,
+      "congSuatDauVao": 4.11,
+      "moMenXoay": 502,
+      "taiTrucDoc": 301,
+      "soTang": 1
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "5:1",
+      "tiLeThucTe": 5.23,
+      "tocDoRa": 335,
+      "congSuatDauVao": 15.38,
+      "moMenXoay": 2710,
+      "taiTrucDoc": 710,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "10:1",
+      "tiLeThucTe": 9.9,
+      "tocDoRa": 177,
+      "congSuatDauVao": 12.39,
+      "moMenXoay": 4130,
+      "taiTrucDoc": 880,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "15:1",
+      "tiLeThucTe": 15.41,
+      "tocDoRa": 114,
+      "congSuatDauVao": 9.23,
+      "moMenXoay": 4785,
+      "taiTrucDoc": 1020,
+      "soTang": 2
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "20:1",
+      "tiLeThucTe": 22.9,
+      "tocDoRa": 76,
+      "congSuatDauVao": 6.87,
+      "moMenXoay": 4720,
+      "taiTrucDoc": 1165,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "30:1",
+      "tiLeThucTe": 32.02,
+      "tocDoRa": 55,
+      "congSuatDauVao": 4.83,
+      "moMenXoay": 5045,
+      "taiTrucDoc": 1305,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "40:1",
+      "tiLeThucTe": 41.22,
+      "tocDoRa": 42,
+      "congSuatDauVao": 3.75,
+      "moMenXoay": 5045,
+      "taiTrucDoc": 1420,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "50:1",
+      "tiLeThucTe": 52.21,
+      "tocDoRa": 34,
+      "congSuatDauVao": 2.96,
+      "moMenXoay": 5045,
+      "taiTrucDoc": 1480,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "60:1",
+      "tiLeThucTe": 63.07,
+      "tocDoRa": 28,
+      "congSuatDauVao": 2.45,
+      "moMenXoay": 5045,
+      "taiTrucDoc": 1480,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "80:1",
+      "tiLeThucTe": 78.59,
+      "tocDoRa": 22,
+      "congSuatDauVao": 1.97,
+      "moMenXoay": 5045,
+      "taiTrucDoc": 1480,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "100:1",
+      "tiLeThucTe": 98.69,
+      "tocDoRa": 18,
+      "congSuatDauVao": 1.57,
+      "moMenXoay": 5045,
+      "taiTrucDoc": 1480,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": 67,
+      "tiLeDanhNghia": "120:1",
+      "tiLeThucTe": 125.28,
+      "tocDoRa": 14,
+      "congSuatDauVao": 1.23,
+      "moMenXoay": 5045,
+      "taiTrucDoc": 1480,
+      "soTang": 3
+    },
+    {
+      "kichThuocHopSo": "RX77",
+      "tiLeDanhNghia": "4:1",
+      "tiLeThucTe": 4.19,
+      "tocDoRa": 418,
+      "congSuatDauVao": 6.16,
+      "moMenXoay": 895,
+      "taiTrucDoc": 474,
+      "soTang": 1
+    },
+    {
+      "kichThuocHopSo": null,
+      "tiLeDanhNghia": null,
+      "tiLeThucTe": null,
+      "tocDoRa": null,
+      "congSuatDauVao": null,
+      "moMenXoay": null,
+      "taiTrucDoc": null,
+      "soTang": null
+    }
+  ]
+}]

@@ -1,0 +1,2527 @@
+{
+  "type": "Helical",
+  "data": [
+    {
+      "Box Size": 37,
+      "Normal Ratio": 5.1,
+      "Actual Ratio": 4.88,
+      "Output RPM": 359,
+      "Input HP": 5.91,
+      "Output Torque (lbs.in)": 970,
+      "O.H.L (lbs)": 305,
+      "Stages": 2,
+      "56C": {
+        "HP": 1,
+        "T": 165
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 330
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 37,
+      "Normal Ratio": 5.1,
+      "Actual Ratio": 4.88,
+      "Output RPM": 359,
+      "Input HP": 5.91,
+      "Output Torque (lbs.in)": 970,
+      "O.H.L (lbs)": 305,
+      "Stages": 2,
+      "56C": {
+        "HP": 1,
+        "T": 165
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 330
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 37,
+      "Normal Ratio": 10.1,
+      "Actual Ratio": 10.02,
+      "Output RPM": 175,
+      "Input HP": 4.04,
+      "Output Torque (lbs.in)": 1360,
+      "O.H.L (lbs)": 388,
+      "Stages": 2,
+      "56C": {
+        "HP": 1,
+        "T": 340
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 680
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 37,
+      "Normal Ratio": 15.1,
+      "Actual Ratio": 15.75,
+      "Output RPM": 111,
+      "Input HP": 2.99,
+      "Output Torque (lbs.in)": 1580,
+      "O.H.L (lbs)": 451,
+      "Stages": 2,
+      "56C": {
+        "HP": 1,
+        "T": 535
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 1070
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 37,
+      "Normal Ratio": 20.1,
+      "Actual Ratio": 19.95,
+      "Output RPM": 88,
+      "Input HP": 2.49,
+      "Output Torque (lbs.in)": 1670,
+      "O.H.L (lbs)": 489,
+      "Stages": 2,
+      "56C": {
+        "HP": 1,
+        "T": 680
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 1355
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 37,
+      "Normal Ratio": 30.1,
+      "Actual Ratio": 31.02,
+      "Output RPM": 56,
+      "Input HP": 1.75,
+      "Output Torque (lbs.in)": 1770,
+      "O.H.L (lbs)": 565,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 1025
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 2130
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 37,
+      "Normal Ratio": 40.1,
+      "Actual Ratio": 40.08,
+      "Output RPM": 44,
+      "Input HP": 1.35,
+      "Output Torque (lbs.in)": 1770,
+      "O.H.L (lbs)": 615,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 1325
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 37,
+      "Normal Ratio": 50.1,
+      "Actual Ratio": 52.24,
+      "Output RPM": 33,
+      "Input HP": 1.04,
+      "Output Torque (lbs.in)": 1770,
+      "O.H.L (lbs)": 670,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 1725
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 37,
+      "Normal Ratio": 60.1,
+      "Actual Ratio": 60.84,
+      "Output RPM": 29,
+      "Input HP": 0.89,
+      "Output Torque (lbs.in)": 1770,
+      "O.H.L (lbs)": 705,
+      "Stages": 3,
+      "56C": {
+        "HP": 0.89,
+        "T": 1770
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 47,
+      "Normal Ratio": 5.1,
+      "Actual Ratio": 4.85,
+      "Output RPM": 361,
+      "Input HP": 9.59,
+      "Output Torque (lbs.in)": 1565,
+      "O.H.L (lbs)": 440,
+      "Stages": 2,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 330
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 495
+      },
+      "184TC": {
+        "HP": 5,
+        "T": 825
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 47,
+      "Normal Ratio": 10.1,
+      "Actual Ratio": 11.27,
+      "Output RPM": 155,
+      "Input HP": 5.95,
+      "Output Torque (lbs.in)": 2255,
+      "O.H.L (lbs)": 590,
+      "Stages": 2,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 1150
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 47,
+      "Normal Ratio": 15.1,
+      "Actual Ratio": 15.18,
+      "Output RPM": 115,
+      "Input HP": 4.87,
+      "Output Torque (lbs.in)": 2490,
+      "O.H.L (lbs)": 650,
+      "Stages": 2,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 1555
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 47,
+      "Normal Ratio": 20.1,
+      "Actual Ratio": 18.37,
+      "Output RPM": 95,
+      "Input HP": 4.29,
+      "Output Torque (lbs.in)": 2650,
+      "O.H.L (lbs)": 690,
+      "Stages": 2,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 1250
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 1880
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 47,
+      "Normal Ratio": 30.1,
+      "Actual Ratio": 31.83,
+      "Output RPM": 55,
+      "Input HP": 2.73,
+      "Output Torque (lbs.in)": 2830,
+      "O.H.L (lbs)": 835,
+      "Stages": 3,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 2105
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 3250
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 47,
+      "Normal Ratio": 40.1,
+      "Actual Ratio": 41.51,
+      "Output RPM": 42,
+      "Input HP": 2.09,
+      "Output Torque (lbs.in)": 2830,
+      "O.H.L (lbs)": 910,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 1370
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 47,
+      "Normal Ratio": 50.1,
+      "Actual Ratio": 52.84,
+      "Output RPM": 33,
+      "Input HP": 1.64,
+      "Output Torque (lbs.in)": 2830,
+      "O.H.L (lbs)": 985,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 1740
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 47,
+      "Normal Ratio": 60.1,
+      "Actual Ratio": 63.37,
+      "Output RPM": 28,
+      "Input HP": 1.37,
+      "Output Torque (lbs.in)": 2830,
+      "O.H.L (lbs)": 1050,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 2095
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": "RX57",
+      "Normal Ratio": 3.1,
+      "Actual Ratio": 3.19,
+      "Output RPM": 549,
+      "Input HP": 4.04,
+      "Output Torque (lbs.in)": 447,
+      "O.H.L (lbs)": 133,
+      "Stages": 1,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 336
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": "RX67",
+      "Normal Ratio": 2.1,
+      "Actual Ratio": 1.86,
+      "Output RPM": 941,
+      "Input HP": 9.43,
+      "Output Torque (lbs.in)": 617,
+      "O.H.L (lbs)": 43,
+      "Stages": 1,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 196
+      },
+      "184TC": {
+        "HP": 5,
+        "T": 327
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": "RX67",
+      "Normal Ratio": 2.5,
+      "Actual Ratio": 2.35,
+      "Output RPM": 745,
+      "Input HP": 7.56,
+      "Output Torque (lbs.in)": 616,
+      "O.H.L (lbs)": 94,
+      "Stages": 1,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 248
+      },
+      "184TC": {
+        "HP": 5,
+        "T": 413
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": "RX67",
+      "Normal Ratio": 3.5,
+      "Actual Ratio": 3.52,
+      "Output RPM": 497,
+      "Input HP": 4.11,
+      "Output Torque (lbs.in)": 502,
+      "O.H.L (lbs)": 301,
+      "Stages": 1,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 371
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 5.1,
+      "Actual Ratio": 5.23,
+      "Output RPM": 335,
+      "Input HP": 15.38,
+      "Output Torque (lbs.in)": 2710,
+      "O.H.L (lbs)": 710,
+      "Stages": 2,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 355
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 535
+      },
+      "184TC": {
+        "HP": 5,
+        "T": 890
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 10.1,
+      "Actual Ratio": 9.9,
+      "Output RPM": 177,
+      "Input HP": 12.39,
+      "Output Torque (lbs.in)": 4130,
+      "O.H.L (lbs)": 880,
+      "Stages": 2,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 1010
+      },
+      "184TC": {
+        "HP": 5,
+        "T": 1685
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 15.1,
+      "Actual Ratio": 15.41,
+      "Output RPM": 114,
+      "Input HP": 9.23,
+      "Output Torque (lbs.in)": 4785,
+      "O.H.L (lbs)": 1020,
+      "Stages": 2,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 1050
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 1575
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 20.1,
+      "Actual Ratio": 22.9,
+      "Output RPM": 76,
+      "Input HP": 6.87,
+      "Output Torque (lbs.in)": 4720,
+      "O.H.L (lbs)": 1165,
+      "Stages": 3,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 2270
+      },
+      "184TC": {
+        "HP": 5,
+        "T": 3785
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 30.1,
+      "Actual Ratio": 32.02,
+      "Output RPM": 55,
+      "Input HP": 4.83,
+      "Output Torque (lbs.in)": 5045,
+      "O.H.L (lbs)": 1305,
+      "Stages": 3,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 2115
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 40.1,
+      "Actual Ratio": 41.22,
+      "Output RPM": 42,
+      "Input HP": 3.75,
+      "Output Torque (lbs.in)": 5045,
+      "O.H.L (lbs)": 1420,
+      "Stages": 3,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 2725
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 50.1,
+      "Actual Ratio": 52.21,
+      "Output RPM": 34,
+      "Input HP": 2.96,
+      "Output Torque (lbs.in)": 5045,
+      "O.H.L (lbs)": 1480,
+      "Stages": 3,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": 2,
+        "T": 3400
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 60.1,
+      "Actual Ratio": 63.07,
+      "Output RPM": 28,
+      "Input HP": 2.45,
+      "Output Torque (lbs.in)": 5045,
+      "O.H.L (lbs)": 1480,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 2085
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 80.1,
+      "Actual Ratio": 78.59,
+      "Output RPM": 22,
+      "Input HP": 1.97,
+      "Output Torque (lbs.in)": 5045,
+      "O.H.L (lbs)": 1480,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 2590
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 100.1,
+      "Actual Ratio": 98.69,
+      "Output RPM": 18,
+      "Input HP": 1.57,
+      "Output Torque (lbs.in)": 5045,
+      "O.H.L (lbs)": 1480,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 3260
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": 67,
+      "Normal Ratio": 120.1,
+      "Actual Ratio": 125.28,
+      "Output RPM": 14,
+      "Input HP": 1.23,
+      "Output Torque (lbs.in)": 5045,
+      "O.H.L (lbs)": 1480,
+      "Stages": 3,
+      "56C": {
+        "HP": 1,
+        "T": 4140
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": null,
+        "T": null
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    {
+      "Box Size": "RX77",
+      "Normal Ratio": 4.1,
+      "Actual Ratio": 4.19,
+      "Output RPM": 418,
+      "Input HP": 6.16,
+      "Output Torque (lbs.in)": 895,
+      "O.H.L (lbs)": 474,
+      "Stages": 1,
+      "56C": {
+        "HP": null,
+        "T": null
+      },
+      "143/145TC": {
+        "HP": null,
+        "T": null
+      },
+      "182TC": {
+        "HP": 3,
+        "T": 442
+      },
+      "184TC": {
+        "HP": null,
+        "T": null
+      },
+      "213TC": {
+        "HP": null,
+        "T": null
+      },
+      "215TC": {
+        "HP": null,
+        "T": null
+      },
+      "254TC": {
+        "HP": null,
+        "T": null
+      },
+      "256TC": {
+        "HP": null,
+        "T": null
+      }
+    },
+    [
+      {
+        "Box Size": "77",
+        "Normal Ratio": 5.1,
+        "Actual Ratio": 4.78,
+        "Output RPM": 366,
+        "Input HP": 25.13,
+        "Output Torque (lbs.in)": 4040,
+        "O.H.L (lbs)": 785,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 3,
+          "T": 485
+        },
+        "184TC": {
+          "HP": 5,
+          "T": 815
+        },
+        "213TC": {
+          "HP": 7.5,
+          "T": 1220
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 10.1,
+        "Actual Ratio": 10.91,
+        "Output RPM": 160,
+        "Input HP": 16.89,
+        "Output Torque (lbs.in)": 6205,
+        "O.H.L (lbs)": 1035,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": null,
+          "T": null
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": 7.5,
+          "T": 2795
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 15.1,
+        "Actual Ratio": 14.83,
+        "Output RPM": 118,
+        "Input HP": 12.35,
+        "Output Torque (lbs.in)": 6165,
+        "O.H.L (lbs)": 1145,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 3,
+          "T": 1515
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 20.1,
+        "Actual Ratio": 23.31,
+        "Output RPM": 75,
+        "Input HP": 7.84,
+        "Output Torque (lbs.in)": 6150,
+        "O.H.L (lbs)": 1330,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 3,
+          "T": 2385
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 25.1,
+        "Actual Ratio": 25.27,
+        "Output RPM": 69,
+        "Input HP": 8.04,
+        "Output Torque (lbs.in)": 6640,
+        "O.H.L (lbs)": 1365,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 3,
+          "T": 2515
+        },
+        "184TC": {
+          "HP": 5,
+          "T": 4190
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 30.1,
+        "Actual Ratio": 31.97,
+        "Output RPM": 55,
+        "Input HP": 6.36,
+        "Output Torque (lbs.in)": 6640,
+        "O.H.L (lbs)": 1480,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 3,
+          "T": 3155
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 40.1,
+        "Actual Ratio": 39.31,
+        "Output RPM": 45,
+        "Input HP": 5.49,
+        "Output Torque (lbs.in)": 6640,
+        "O.H.L (lbs)": 1555,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 3,
+          "T": 3855
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 50.1,
+        "Actual Ratio": 53.24,
+        "Output RPM": 33,
+        "Input HP": 3.82,
+        "Output Torque (lbs.in)": 6640,
+        "O.H.L (lbs)": 1755,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 2,
+          "T": 3505
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 60.1,
+        "Actual Ratio": 57.73,
+        "Output RPM": 30,
+        "Input HP": 3.52,
+        "Output Torque (lbs.in)": 6640,
+        "O.H.L (lbs)": 1800,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 2,
+          "T": 3855
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 80.1,
+        "Actual Ratio": 84.62,
+        "Output RPM": 21,
+        "Input HP": 2.4,
+        "Output Torque (lbs.in)": 6640,
+        "O.H.L (lbs)": 1935,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 2,
+          "T": 5510
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 100.1,
+        "Actual Ratio": 89.8,
+        "Output RPM": 19,
+        "Input HP": 2.26,
+        "Output Torque (lbs.in)": 6640,
+        "O.H.L (lbs)": 1935,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 2,
+          "T": 6090
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "77",
+        "Normal Ratio": 120.1,
+        "Actual Ratio": 124.34,
+        "Output RPM": 14,
+        "Input HP": 1.64,
+        "Output Torque (lbs.in)": 6640,
+        "O.H.L (lbs)": 1935,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 1,
+          "T": 4130
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "RX87",
+        "Normal Ratio": 2.1,
+        "Actual Ratio": 2.04,
+        "Output RPM": 858,
+        "Input HP": 26.27,
+        "Output Torque (lbs.in)": 1859,
+        "O.H.L (lbs)": 123,
+        "Stages": 1,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 7.5,
+          "T": 538
+        },
+        "184TC": {
+          "HP": 10,
+          "T": 717
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 1075
+        },
+        "215TC": {
+          "HP": 20,
+          "T": 1434
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "RX87",
+        "Normal Ratio": 2.51,
+        "Actual Ratio": 2.52,
+        "Output RPM": 694,
+        "Input HP": 20.25,
+        "Output Torque (lbs.in)": 1770,
+        "O.H.L (lbs)": 254,
+        "Stages": 1,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 7.5,
+          "T": 664
+        },
+        "184TC": {
+          "HP": 10,
+          "T": 886
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 1328
+        },
+        "215TC": {
+          "HP": 20,
+          "T": 1771
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "RX87",
+        "Normal Ratio": 3.1,
+        "Actual Ratio": 3.19,
+        "Output RPM": 549,
+        "Input HP": 14.4,
+        "Output Torque (lbs.in)": 1593,
+        "O.H.L (lbs)": 497,
+        "Stages": 1,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 7.5,
+          "T": 841
+        },
+        "184TC": {
+          "HP": 10,
+          "T": 1121
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "RX87",
+        "Normal Ratio": 3.51,
+        "Actual Ratio": 3.54,
+        "Output RPM": 494,
+        "Input HP": 12.83,
+        "Output Torque (lbs.in)": 1575,
+        "O.H.L (lbs)": 573,
+        "Stages": 1,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 7.5,
+          "T": 993
+        },
+        "184TC": {
+          "HP": 10,
+          "T": 1244
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "RX87",
+        "Normal Ratio": 4.1,
+        "Actual Ratio": 3.77,
+        "Output RPM": 464,
+        "Input HP": 11.51,
+        "Output Torque (lbs.in)": 1505,
+        "O.H.L (lbs)": 690,
+        "Stages": 1,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 7.5,
+          "T": 994
+        },
+        "184TC": {
+          "HP": 10,
+          "T": 1325
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "RX87",
+        "Normal Ratio": 4.51,
+        "Actual Ratio": 4.43,
+        "Output RPM": 395,
+        "Input HP": 6.91,
+        "Output Torque (lbs.in)": 1062,
+        "O.H.L (lbs)": 942,
+        "Stages": 1,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 3,
+          "T": 467
+        },
+        "184TC": {
+          "HP": 5,
+          "T": 778
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "87",
+        "Normal Ratio": 5.1,
+        "Actual Ratio": 4.73,
+        "Output RPM": 370,
+        "Input HP": 38.49,
+        "Output Torque (lbs.in)": 6120,
+        "O.H.L (lbs)": 1800,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 7.5,
+          "T": 1205
+        },
+        "184TC": {
+          "HP": 10,
+          "T": 1610
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 2415
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "87",
+        "Normal Ratio": 10.1,
+        "Actual Ratio": 10.66,
+        "Output RPM": 164,
+        "Input HP": 27.28,
+        "Output Torque (lbs.in)": 9790,
+        "O.H.L (lbs)": 2375,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 7.5,
+          "T": 2725
+        },
+        "184TC": {
+          "HP": 10,
+          "T": 3635
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 3455
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "87",
+        "Normal Ratio": 15.1,
+        "Actual Ratio": 15.29,
+        "Output RPM": 114,
+        "Input HP": 21.45,
+        "Output Torque (lbs.in)": 11040,
+        "O.H.L (lbs)": 2680,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 5,
+          "T": 2615
+        },
+        "184TC": {
+          "HP": 7.5,
+          "T": 3925
+        },
+        "213TC": {
+          "HP": 10,
+          "T": 5230
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "RX97",
+        "Normal Ratio": 5.1,
+        "Actual Ratio": 5.42,
+        "Output RPM": 323,
+        "Input HP": 68.89,
+        "Output Torque (lbs.in)": 13010,
+        "O.H.L (lbs)": 1980,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": null,
+          "T": null
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 2770
+        },
+        "215TC": {
+          "HP": 20,
+          "T": 3690
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "97",
+        "Normal Ratio": 15.1,
+        "Actual Ratio": 16.96,
+        "Output RPM": 103,
+        "Input HP": 39.04,
+        "Output Torque (lbs.in)": 23055,
+        "O.H.L (lbs)": 2900,
+        "Stages": 2,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": 7.5,
+          "T": 4340
+        },
+        "184TC": {
+          "HP": 10,
+          "T": 5790
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 8685
+        },
+        "215TC": {
+          "HP": 20,
+          "T": 11580
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "RX107",
+        "Normal Ratio": 4.1,
+        "Actual Ratio": 4.13,
+        "Output RPM": 424,
+        "Input HP": 32.13,
+        "Output Torque (lbs.in)": 4602,
+        "O.H.L (lbs)": 1205,
+        "Stages": 1,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": null,
+          "T": null
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 2177
+        },
+        "215TC": {
+          "HP": 20,
+          "T": 2903
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "107",
+        "Normal Ratio": 40.1,
+        "Actual Ratio": 39.52,
+        "Output RPM": 44,
+        "Input HP": 25.5,
+        "Output Torque (lbs.in)": 32667,
+        "O.H.L (lbs)": 3951,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": null,
+          "T": null
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 19600
+        },
+        "215TC": {
+          "HP": 20,
+          "T": 26134
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "137",
+        "Normal Ratio": 50.1,
+        "Actual Ratio": 50.13,
+        "Output RPM": 35,
+        "Input HP": 32,
+        "Output Torque (lbs.in)": 53076,
+        "O.H.L (lbs)": 5545,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": null,
+          "T": null
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": 15,
+          "T": 24734
+        },
+        "215TC": {
+          "HP": 20,
+          "T": 33156
+        },
+        "254TC": {
+          "HP": null,
+          "T": null
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      },
+      {
+        "Box Size": "147",
+        "Normal Ratio": 60.1,
+        "Actual Ratio": 60.38,
+        "Output RPM": 29,
+        "Input HP": 42.3,
+        "Output Torque (lbs.in)": 83306,
+        "O.H.L (lbs)": 13090,
+        "Stages": 3,
+        "56C": {
+          "HP": null,
+          "T": null
+        },
+        "143/145TC": {
+          "HP": null,
+          "T": null
+        },
+        "182TC": {
+          "HP": null,
+          "T": null
+        },
+        "184TC": {
+          "HP": null,
+          "T": null
+        },
+        "213TC": {
+          "HP": null,
+          "T": null
+        },
+        "215TC": {
+          "HP": null,
+          "T": null
+        },
+        "254TC": {
+          "HP": 20,
+          "T": 39935
+        },
+        "256TC": {
+          "HP": null,
+          "T": null
+        }
+      }
+    ]
+  ]
+}

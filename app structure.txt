@@ -1,0 +1,24 @@
+my-app/
+├── app/                         # 🧭 Thư mục chính cho định tuyến (routing)
+│   ├── (tabs)/                  # Nhóm các màn hình hiển thị dưới dạng Tab
+│   │   ├── _layout.tsx         # Định nghĩa layout cho tab navigator (<Tabs />)
+│   │   ├── index.tsx           # Tab 1: Màn hình chính
+│   │   ├── two.tsx             # Tab 2: Màn hình phụ
+│   │   ├── motorConfig.tsx     # Tab 3: Cấu hình động cơ
+│   │   ├── technicalSpecification.tsx # Tab 4: Thông số kỹ thuật
+│   ├── _layout.tsx             # Layout toàn cục (bọc toàn bộ app, thường dùng <Stack />)
+│   ├── login.tsx               # Màn hình đăng nhập
+│   ├── signup.tsx              # Màn hình đăng ký
+│   ├── modal.tsx               # Màn hình dạng modal (chạy bằng route /modal)
+│   ├── +html.tsx               # Tùy chỉnh cấu trúc HTML cho phiên bản web (nếu build web)
+│   ├── +not-found.tsx          # Màn hình 404 khi không tìm thấy route
+│
+├── assets/                     # Ảnh, font, logo... dùng trong app
+├── components/                 # Các thành phần giao diện tái sử dụng
+├── constants/                  # Biến dùng toàn app (màu sắc, kích thước, cấu hình layout)
+│
+├── app.json                    # File cấu hình cho Expo
+├── tsconfig.json               # File cấu hình cho TypeScript
+├── package.json                # Danh sách dependency & script
+├── expo-env.d.ts               # Type định nghĩa cho môi trường Expo
+├── node_modules/               # Thư viện cài đặt từ npm/yarn

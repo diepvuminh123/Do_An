@@ -1,0 +1,1049 @@
+[{
+  "_id": {
+    "$oid": "67f2836e05dde9308c91866d"
+  },
+  "loai": "worm",
+  "tocDoDauVao": 1750,
+  "duLieu": [
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "7.5:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.7,
+        "moMenXoayDauRa": 160,
+        "tocDoDauRa": 233,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 13.8,
+        "caoNhat": 28.8
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "10:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.54,
+        "moMenXoayDauRa": 160,
+        "tocDoDauRa": 175,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 13.8,
+        "caoNhat": 28.8
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "15:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.38,
+        "moMenXoayDauRa": 160,
+        "tocDoDauRa": 117,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 13.8,
+        "caoNhat": 28.8
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "20:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.28,
+        "moMenXoayDauRa": 151,
+        "tocDoDauRa": 88,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 13.2,
+        "caoNhat": 28.2
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "25:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.3,
+        "moMenXoayDauRa": 185,
+        "tocDoDauRa": 70,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 13.2,
+        "caoNhat": 27
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "30:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.25,
+        "moMenXoayDauRa": 177,
+        "tocDoDauRa": 58,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 13.8,
+        "caoNhat": 28.8
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "40:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.19,
+        "moMenXoayDauRa": 160,
+        "tocDoDauRa": 44,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 13.2,
+        "caoNhat": 28.2
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "50:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.15,
+        "moMenXoayDauRa": 151,
+        "tocDoDauRa": 35,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 13.2,
+        "caoNhat": 27
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "60:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.12,
+        "moMenXoayDauRa": 134,
+        "tocDoDauRa": 29,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 12.6,
+        "caoNhat": 25.8
+      }
+    },
+    {
+      "kichThuocHopSo": 30,
+      "tiLeTruyen": "80:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.08,
+        "moMenXoayDauRa": 109,
+        "tocDoDauRa": 22,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 12.6,
+        "caoNhat": 25.8
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "7.5:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.5,
+        "moMenXoayDauRa": 353,
+        "tocDoDauRa": 233,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 24
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "10:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.21,
+        "moMenXoayDauRa": 370,
+        "tocDoDauRa": 175,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 24
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "15:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.83,
+        "moMenXoayDauRa": 370,
+        "tocDoDauRa": 117,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 24
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "20:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.63,
+        "moMenXoayDauRa": 361,
+        "tocDoDauRa": 88,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 24
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "25:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.48,
+        "moMenXoayDauRa": 328,
+        "tocDoDauRa": 70,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 10.8,
+        "caoNhat": 21
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "30:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.53,
+        "moMenXoayDauRa": 403,
+        "tocDoDauRa": 58,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 24
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "40:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.4,
+        "moMenXoayDauRa": 378,
+        "tocDoDauRa": 44,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 24
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "50:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.31,
+        "moMenXoayDauRa": 353,
+        "tocDoDauRa": 35,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 10.8,
+        "caoNhat": 21
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "60:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.25,
+        "moMenXoayDauRa": 319,
+        "tocDoDauRa": 29,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 21.6
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "80:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.18,
+        "moMenXoayDauRa": 277,
+        "tocDoDauRa": 22,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 21.6
+      }
+    },
+    {
+      "kichThuocHopSo": 40,
+      "tiLeTruyen": "100:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.14,
+        "moMenXoayDauRa": 244,
+        "tocDoDauRa": 18,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 11.4,
+        "caoNhat": 21.6
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "7.5:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 2.72,
+        "moMenXoayDauRa": 647,
+        "tocDoDauRa": 233,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 8.4,
+        "caoNhat": 19.2
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "10:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 2.12,
+        "moMenXoayDauRa": 664,
+        "tocDoDauRa": 175,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 8.4,
+        "caoNhat": 19.2
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "15:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.52,
+        "moMenXoayDauRa": 681,
+        "tocDoDauRa": 117,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 8.4,
+        "caoNhat": 19.2
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "20:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.14,
+        "moMenXoayDauRa": 656,
+        "tocDoDauRa": 88,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 17.4
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "25:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.86,
+        "moMenXoayDauRa": 597,
+        "tocDoDauRa": 70,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.2,
+        "caoNhat": 17.4
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "30:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.94,
+        "moMenXoayDauRa": 740,
+        "tocDoDauRa": 58,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 8.4,
+        "caoNhat": 19.2
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "40:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.7,
+        "moMenXoayDauRa": 689,
+        "tocDoDauRa": 44,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 17.4
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "50:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.56,
+        "moMenXoayDauRa": 647,
+        "tocDoDauRa": 35,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.2,
+        "caoNhat": 17.4
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "60:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.47,
+        "moMenXoayDauRa": 605,
+        "tocDoDauRa": 29,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "80:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.35,
+        "moMenXoayDauRa": 546,
+        "tocDoDauRa": 22,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 50,
+      "tiLeTruyen": "100:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.26,
+        "moMenXoayDauRa": 462,
+        "tocDoDauRa": 18,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "7.5:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 4.46,
+        "moMenXoayDauRa": 1076,
+        "tocDoDauRa": 233,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.8,
+        "caoNhat": 17.4
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "10:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 3.52,
+        "moMenXoayDauRa": 1108,
+        "tocDoDauRa": 175,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.8,
+        "caoNhat": 17.4
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "15:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 2.7,
+        "moMenXoayDauRa": 1236,
+        "tocDoDauRa": 117,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.8,
+        "caoNhat": 17.4
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "20:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 2.06,
+        "moMenXoayDauRa": 1225,
+        "tocDoDauRa": 88,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "25:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.56,
+        "moMenXoayDauRa": 1124,
+        "tocDoDauRa": 70,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 13.8
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "30:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.64,
+        "moMenXoayDauRa": 1345,
+        "tocDoDauRa": 58,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.8,
+        "caoNhat": 17.4
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "40:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.21,
+        "moMenXoayDauRa": 1261,
+        "tocDoDauRa": 44,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "50:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.99,
+        "moMenXoayDauRa": 1208,
+        "tocDoDauRa": 35,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 13.8
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "60:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.82,
+        "moMenXoayDauRa": 1135,
+        "tocDoDauRa": 29,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6,
+        "caoNhat": 13.8
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "80:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.6,
+        "moMenXoayDauRa": 1027,
+        "tocDoDauRa": 22,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6,
+        "caoNhat": 13.8
+      }
+    },
+    {
+      "kichThuocHopSo": 63,
+      "tiLeTruyen": "100:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.51,
+        "moMenXoayDauRa": 992,
+        "tocDoDauRa": 18,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6,
+        "caoNhat": 13.8
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "7.5:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 6.44,
+        "moMenXoayDauRa": 1555,
+        "tocDoDauRa": 233,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.8,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "10:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 5.2,
+        "moMenXoayDauRa": 1656,
+        "tocDoDauRa": 175,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.8,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "15:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 4.07,
+        "moMenXoayDauRa": 1900,
+        "tocDoDauRa": 117,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.8,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "20:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 3.24,
+        "moMenXoayDauRa": 1953,
+        "tocDoDauRa": 88,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 14.4
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "25:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 2.43,
+        "moMenXoayDauRa": 1784,
+        "tocDoDauRa": 70,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 13.2
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "30:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 2.41,
+        "moMenXoayDauRa": 2028,
+        "tocDoDauRa": 58,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.8,
+        "caoNhat": 16.2
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "40:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.9,
+        "moMenXoayDauRa": 2029,
+        "tocDoDauRa": 44,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 14.4
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "50:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.47,
+        "moMenXoayDauRa": 1881,
+        "tocDoDauRa": 35,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 13.2
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "60:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.22,
+        "moMenXoayDauRa": 1778,
+        "tocDoDauRa": 29,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6,
+        "caoNhat": 12.6
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "80:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.91,
+        "moMenXoayDauRa": 1632,
+        "tocDoDauRa": 22,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6,
+        "caoNhat": 12.6
+      }
+    },
+    {
+      "kichThuocHopSo": 75,
+      "tiLeTruyen": "100:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 0.74,
+        "moMenXoayDauRa": 1517,
+        "tocDoDauRa": 18,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6,
+        "caoNhat": 12.6
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "7.5:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 10.98,
+        "moMenXoayDauRa": 2682,
+        "tocDoDauRa": 233,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.2,
+        "caoNhat": 14.4
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "10:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 8.92,
+        "moMenXoayDauRa": 2867,
+        "tocDoDauRa": 175,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.2,
+        "caoNhat": 14.4
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "15:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 7.05,
+        "moMenXoayDauRa": 3330,
+        "tocDoDauRa": 117,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.2,
+        "caoNhat": 14.4
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "20:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 5.33,
+        "moMenXoayDauRa": 3288,
+        "tocDoDauRa": 88,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 12
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "25:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 4.18,
+        "moMenXoayDauRa": 3145,
+        "tocDoDauRa": 70,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6,
+        "caoNhat": 11.4
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "30:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 4.21,
+        "moMenXoayDauRa": 3632,
+        "tocDoDauRa": 58,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 7.2,
+        "caoNhat": 14.4
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "40:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 3.01,
+        "moMenXoayDauRa": 3330,
+        "tocDoDauRa": 44,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6.6,
+        "caoNhat": 12
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "50:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 2.36,
+        "moMenXoayDauRa": 3145,
+        "tocDoDauRa": 35,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 6,
+        "caoNhat": 11.4
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "60:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.93,
+        "moMenXoayDauRa": 2960,
+        "tocDoDauRa": 29,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 5.4,
+        "caoNhat": 10.8
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "80:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.27,
+        "moMenXoayDauRa": 2397,
+        "tocDoDauRa": 22,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 5.4,
+        "caoNhat": 10.8
+      }
+    },
+    {
+      "kichThuocHopSo": 90,
+      "tiLeTruyen": "100:1",
+      "thongSoCoKhi": {
+        "congSuatDauVao": 1.03,
+        "moMenXoayDauRa": 2271,
+        "tocDoDauRa": 18,
+        "hieuSuat": null,
+        "taiTrucDoc": null,
+        "taiDayTrucRa": null
+      },
+      "doHo": {
+        "thapNhat": 5.4,
+        "caoNhat": 10.8
+      }
+    }
+  ]
+}]

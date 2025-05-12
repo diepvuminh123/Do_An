@@ -1,0 +1,34 @@
+conveyor-system-backend/
+│
+├── config/
+│   ├── db.js                  # Kết nối MongoDB
+│   └── constants.js           # Các hằng số, cấu hình chung
+│
+├── controllers/
+│   ├── calculationController.js   # Xử lý tính toán băng tải
+│   ├── projectController.js       # Quản lý dự án người dùng
+│   └── userController.js          # Xác thực và quản lý người dùng
+│
+├── models/
+│   ├── User.js                # Model người dùng
+│   ├── Project.js             # Model dự án
+│   └── Calculation.js         # Model lưu kết quả tính toán
+│
+├── routes/
+│   ├── index.js               # Router chính
+│   ├── calculationRoutes.js   # Routes cho tính toán
+│   ├── projectRoutes.js       # Routes cho dự án
+│   └── userRoutes.js          # Routes cho người dùng
+│
+├── utils/
+│   ├── formulaUtils.js        # Các công thức tính toán
+│   └── validationUtils.js     # Hàm xác thực đầu vào
+│
+├── middleware/
+│   ├── auth.js                # Middleware xác thực
+│   └── errorHandler.js        # Xử lý lỗi chung
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── index.js                   # Entry point

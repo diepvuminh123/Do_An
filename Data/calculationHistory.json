@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "6611f5cb1a1f5e123456abcd",
+    "motorPower": {
+      "value": 5.5,
+      "unit": "kW"
+    },
+    "inputSpeed": 1450,
+    "desiredOutputSpeed": 72,
+    "gearRatio": "20.1:1",
+    "torque": "1300 Nm",
+    "conditions": {
+      "loadType": "Medium",
+      "dailyOperationHours": "4-8h",
+      "environment": [
+        "Dusty",
+        "High Temperature"
+      ]
+    },
+    "selectedGearboxType": "Helical",
+    "recommendations": [
+      "6611fabc12345678deadbeef",
+      "6611fa9e98765432aabbccdd"
+    ],
+    "createdAt": "2025-04-06T15:43:22.000Z"
+  },
+  {
+    "_id": "6611f5cb1a1f5e9876543210",
+    "motorPower": {
+      "value": 3,
+      "unit": "HP"
+    },
+    "inputSpeed": 1750,
+    "desiredOutputSpeed": 250,
+    "gearRatio": "7:1",
+    "torque": "600 Nm",
+    "conditions": {
+      "loadType": "Light",
+      "dailyOperationHours": "<4h",
+      "environment": [
+        "Normal"
+      ]
+    },
+    "selectedGearboxType": "Worm",
+    "recommendations": [
+      "6611fabc99999999bbbbcccc"
+    ],
+    "createdAt": "2025-04-06T16:00:00.000Z"
+  }
+]
